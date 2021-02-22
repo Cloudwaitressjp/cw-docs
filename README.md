@@ -1,11 +1,9 @@
 ---
 description: >-
-  Welcome to the CloudWaitress knowledge base. Here you will find articles to
-  help you setup and understand how our platform works. If you need assistance,
-  do not hesitate to contact us.
+  CloudWaitressナレッジベースへようこそ。ここでは、プラットフォームがどのように機能するかをセットアップして理解するのに役立つ記事を見つけることができます。サポートが必要な場合は、お気軽にお問い合わせください。
 ---
 
-# ログイン Overview
+# 視察
 
 {% page-ref page="getting-started/" %}
 

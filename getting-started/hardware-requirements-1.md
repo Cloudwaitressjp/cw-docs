@@ -1,58 +1,57 @@
 ---
-description: >-
-  Learn what devices and printers you can use with our system. We also have a
-  list of recommended devices
+description: 私たちのシステムで使用できるデバイスとプリンターについて学びます。推奨デバイスのリストもあります
 ---
 
-# Hardware Requirements
+# ハードウェア要件
 
-## Stable Internet Connection
+安定したインターネット接続
 
-Every aspect of the system runs online and therefore requires you to be connected to the internet to receive orders. Here are a few recommendations about how to set up your internet:
+システムのあらゆる側面がオンラインで実行されるため、注文を受け取るにはインターネットに接続する必要があります。インターネットの設定方法に関するいくつかの推奨事項は次のとおりです。 ‌ 共有接続の代わりに独自のインターネット接続を使用して、より細かく制御できるようにします 通常の接続が中断された場合に備えて、バックアップとして3G / 4Gモバイルインターネット接続を維持してください。このような場合は、ホットスポットモードで電話を使用することを検討してください。 3G / 4Gモバイルインターネット接続のみを使用することを検討してください。 ITスタッフは、有害なコンテンツへのアクセスを防ぐために、中小企業向けにインターネットファイアウォールを設定することがあります。サーバーへの接続の問題を回避するために、cloudwaitress.jpがファイアウォールでホワイトリストに登録されていることを確認してください。
 
-* Use your own internet connection instead of a shared connection so you have greater control
-* Keep a 3G / 4G mobile internet connection as a backup in-case there is an interruption with your normal connection. Consider using your phone on hotspot mode for such instances.
-* Consider exclusively using a 3G / 4G mobile internet connection. Certain countries have a much more reliable mobile network such as Australia.
+コンピューターまたはタブレット
 
-{% hint style="warning" %}
-IT staff occasionally set up an internet firewall for small business to prevent accessing harmful content. Ensure that cloudwaitress.com is white-listed on your firewall to avoid connection issues to our servers.
-{% endhint %}
+オンラインストアと注文を管理するには、インターネットにアクセスできるデバイスが必要です。少なくとも、タブレット以上を使用することをお勧めします。電話でのアクセスは可能ですが、制限がある場合があります。
 
-## Computer or Tablet
-
-To manage your online store and orders, you will need a device that can access the internet. At a minimum, we recommend using a tablet or bigger. Phone access is possible but may be limiting.
-
-## Printer
+プリンター
 
 {% hint style="info" %}
-This is optional but very helpful for managing orders
+これはオプションですが、注文の管理に非常に役立ちます
 {% endhint %}
 
-You can automatically or manually print new orders using any printer whose drivers are installed on a Android device, Windows or Linux PC. To clarify, this means if you can print from an application like Word or Notepad, then it's compatible with our service. We highly recommend using a thermal receipt printer.
+Androidデバイス、Windows、またはLinux PCにドライバーがインストールされているプリンターを使用して、新しい注文を自動または手動で印刷できます。明確にするために、これは、Wordやメモ帳などのアプリケーションから印刷できる場合、それが当社のサービスと互換性があることを意味します。サーマルレシートプリンターの使用を強くお勧めします。
 
-Compatible devices:
+互換性のあるデバイス
 
 * Android 1.5, 1.6, 2, 3, 4
 * Windows - 7, 8, 10
-* Linux - requires NodeJS
+* Linux - が必要 NodeJS
 
-## Recommended Computers & Tablets
+おすすめのコンピューターとタブレツ
 
-We highly recommend using an Android device or Windows 10 tablet/computer.  Windows provides the greatest flexibility and allows for wireless order printing whilst being able to use the order and table booking dashboard.
 
-### Worldwide
 
-Windows 10 tablets are abundant and cheap these days. You can't go wrong choosing from one of the major brands. Some notable brands include:
+
+
+
+
+### 
+
+
+
+
+
+```text
+最近のWindows10タブレットは豊富で安価です。主要なブランドの1つから選ぶのは間違いありません。いくつかの注目すべきブランドは次のとおりです。
+```
 
 * Lenevo
 * ASUS
 * HP
 * Microsoft - Surface Pro Tablet
-* Chuwi - Decent Chinese brand, starting from around $200
 
-## Recommended Printers
 
-You can use any printer with Windows or Linux drivers or any printer that works with ESCPOS using Android, so you are not restricted to just the printers we recommend.
+
+## Recommended Printer
 
 ### Branded Printers
 
