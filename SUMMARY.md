@@ -4,7 +4,7 @@
 * [スタートアップ](suttoappu/README.md)
   * [ハードウェア要件](suttoappu/hardware-requirements-1.md)
   * [10 分間のクイックスタート](suttoappu/10-minute-quickstart.md)
-  * [Setup Your Menus](suttoappu/setup-your-menus.md)
+  * [メニューの設定](suttoappu/setup-your-menus.md)
   * [Configure Your Services](suttoappu/configure-your-services.md)
   * [Customize Your Design](suttoappu/customize-your-design.md)
   * [Managing Orders & Bookings](suttoappu/managing-orders-and-bookings.md)

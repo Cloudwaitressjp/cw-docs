@@ -1,135 +1,135 @@
 ---
 description: >-
-  To accept orders online, you need to set up your online menu. You can create
-  and manage all your menus under the "Menus" section in the restaurant
-  dashboard.
+  オンラインで注文を受け付けるには、オンラインメニューを設定する必要があります。レストランのダッシュボードの「メニュー」セクションで、すべてのメニューを作成して管理することができます。
 ---
 
-# Setup Your Menus
+# メニューの設定
 
 {% embed url="https://youtu.be/Nyyr2vwB1Io" caption="Menu setup video tutorial" %}
 
-## Setup Process
+セットアッププロセス
 
-Menus are organized in a tree structure. Menus contain categories and categories contain dishes. The general setup process is as follows.
+メニューはツリー構造で構成されています。メニューにはカテゴリが含まれ、
 
-1. Create a menu
-2. Create all the categories under the menu
-3. Create dishes under the categories
-4. Create option-sets to add customization to dishes
-5. Create dish tags to highlight attributes of particular dishes
+カテゴリには料理が含まれます。一般的な設定の流れは以下の通りです。
+
+1. メニューを作成する 
+2. メニューの下にすべてのカテゴリを作成する 
+3. カテゴリー別に料理を作成する 
+4. オプションセットを作成して、料理にカスタマイズを加える 
+5. 特定の料理の属性を強調するためのディッシュタグを作成する
 
 {% hint style="info" %}
-You will likely only need one menu. Multiple menus are useful if certain items are restricted in particular ways. You may need to create a "Breakfast" menu or a "Delivery" menu depending on your requirements
+あなたが必要とするメニューは1つだけでしょう。特定のアイテムが特定の方法で制限されている場合は、複数のメニューが便利です。あなたの要件に応じて、「朝食」メニューまたは「デリバリー」メニューを作成する必要があるかもしれません。
 {% endhint %}
 
-## Example Menu Structure
+メニュー構成例
 
 ```text
-- Menu: Main menu
--- Category: Pizzas
----- Dish: Ham & Cheese
----- Dish: Margrita
----- Dish: Veggie Supreme
--- Category: Sides
----- Dish: Chicken Wings
----- Dish: Fries
--- Category: Drinks
----- Dish: Iced Tea
----- Dish: Cola
----- Dish: Water
+- メニューです。メインメニュー
+-- カテゴリーは？ピザ
+---- ディッシュ。ハム＆チーズ
+---- ディッシュ。マルグリタ
+---- ディッシュ。ベジースプリーム
+-- カテゴリーは以下の通りです。サイド
+---- 料理。手羽先
+---- ディッシュ。フライドポテト
+-- カテゴリ. 飲み物
+---- ディッシュ。アイスティー
+---- Dish. コーラ
+---- ディッシュ。水
 ```
 
-## Menus
+メニュー
 
-These represent your actual real-life menus. Many stores have just one main menu that's always available. Others may have a lunch & dinner menu or a pickup only menu. You will need at least one menu for your online store to work.
-
-Menu availability can depend on certain conditions such as order types \(pickups or deliveries\), order timings \(e.g. pre-order only\). They can also be restricted to certain days and timings.
+これは実際のメニューを表しています。多くのお店では、メインメニューは1つだけで、常に用意されています。他にも、ランチ＆ディナーメニューやピックアップのみのメニューがある場合もあります。あなたのオンラインストアが動作するように、少なくとも1つのメニューが必要になります。 メニューの可用性は、そのような注文の種類（ピックアップまたは配達）、注文のタイミング（例えば、事前注文のみ）などの特定の条件に依存することができます。また、特定の日や時間帯に限定することもできます。
 
 {% hint style="info" %}
-If you only have one menu available, there is no need to place restrictions on it. You can restrict the system globally to your business rules and the menu will work according to that. Restricting a menu to certain conditions is only needed if you have multiple menus
+メニューが1つしかないのであれば、そこに制限をかける必要はありません。業務ルールに合わせてグローバルに制限すれば、それに沿ってメニューが動くようになります。特定の条件でメニューを制限するのは、複数のメニューがある場合にのみ必要です。
 {% endhint %}
 
-## Categories
+カテゴリー
 
-Categories represent a sub-section of a menu and consist of dishes. For example, if you have one standard menu, your categories might include:
+カテゴリーはメニューのサブセクションを表し、料理で構成されています。例えば、標準的なメニューが1つある場合、カテゴリには以下のようなものがあります。
 
-* Starters
-* Mains
-* Sides
-* Drinks
-* Deserts
+* スターター 
+* メイン 
+* 側面 
+* 飲み物 
+* デザート
 
 {% hint style="info" %}
-In some instances, you may need to create a separate menu instead of using a category. For example, If you have many different categories of drinks, such as spirits, wines, beers, sodas, etc. You might want to create a separate drinks menu for all those categories instead of adding it to your food menu.
+場合によっては、カテゴリを使用する代わりに別のメニューを作成する必要があるかもしれません。例えば、スピリッツ、ワイン、ビール、ソーダなど、多くの異なるカテゴリーの飲み物がある場合。フードメニューに追加するのではなく、それらすべてのカテゴリーのために別のドリンクメニューを作成したいと思うかもしれません。
 {% endhint %}
 
-## Dishes
+お料理
 
-Dishes represent actual items that can be purchased. There are 2 types of dishes.
+お料理とは、実際に購入できるものを表しています。お料理には2種類あります
 
-#### Standard Dishes
+スタンダードディッシュ
 
-A standard dish works as you would expect. You would use it to create items such:
+標準的なお皿は、あなたが期待するように動作します。それを使って次のようなアイテムを作ります。
 
-* Ham sandwich
-* Veggie pizza
-* Vanilla ice-cream
+* ハムサンド
+*  ベジピザ 
+* バニラアイス
 
-**Dish Ingredients**
+食材
 
-Standard dishes can contain a list of ingredients. The purpose of this is to allow customers to easily remove certain ingredients. A customer can remove the desired ingredients when they select the dish.
+標準的な料理には、食材のリストが含まれていることがあります。これは、顧客が特定の食材を簡単に取り除くことができるようにするためである。顧客は、料理を選択する際に、希望する食材を取り除くことができる。
 
-#### Combo Dishes
+コンボ料理
 
-Combos are a special type of dish that contain other dishes. It allows you to create a list of choices for customers to select various standard dishes. For example, you can create:
+コンボとは、他の料理が入っている特別なタイプの料理のことです。これは、顧客が様々な標準的な料理を選択するための選択肢のリストを作成することができます。例えば、作成することができます。
 
-* Choose 3 pizzas, 2 sides and 2 drinks
-* Choose a burger, side and drink
+* ピザ3枚、サイド2枚、ドリンク2杯を選ぶ
+*  ハンバーガー、サイド、ドリンク
 
-To do this you will first need to have created some standard dishes. Then when creating your combo, you can create 4 choices, 3 pizza choices and one drink choice. You can then assign dish choices to the pizzas and drinks for customers to choose from.
+を選ぶ これを行うには、まずいくつかの標準的な料理を作成する必要があります。コンボを作成する際には、4つの選択肢、3つのピザと1つのドリンクの選択肢を作成することができます。そして、ピザとドリンクに料理の選択肢を割り当てて、お客さんに選んでもらうことができます。
 
 {% hint style="info" %}
-Combo dishes cannot contain option sets or ingredients directly. Instead when a customer chooses a standard dish within a combo, if the chosen standard dish has any option sets assigned to it, a user can customize it accordingly.
+コンボ料理には、オプションセットや食材を直接含めることはできません。その代わり、お客様がコンボ内のスタンダードディッシュを選択した場合、選択したスタンダードディッシュにオプションセットが割り当てられている場合、ユーザーはそれに応じてカスタマイズすることができます。
 {% endhint %}
 
-#### Dish Availability & Status
+料理の入手可能性とステータス
 
-There are 3 statuses available for a dish. They are:
+料理には3つのステータスがあります。それは以下の通りです。
 
-* Hidden - hides dish from the menu
-* Not available - prevents ordering and shows not available on the dish
-* Out of stock - prevents ordering and shows out of stock on the dish
+* 非表示 - メニューから料理を隠す ご利用いただけません - 
+* ご注文やお料理でのご利用ができない表示を防ぐことができます。
+*  在庫切れ - 注文を防ぎ、皿に在庫切れを表示する
 
-In the admin dashboard, you can edit the status of a dish by checking the tickbox on the left of it. Then select the desired status from the popup menu.
+管理者ダッシュボードでは、料理の左側にあるチェックボックスにチェックを入れることで、料理のステータスを編集することができます。そして、ポップアップメニューから目的のステータスを選択します。
 
-## Option Sets
+オプションセット
 
-All **dish customization is done using option sets**. Option sets are a configurable set of options that can be assigned to any number of dishes. With option sets, you are able to create requirements such as:
+すべての料理のカスタマイズは、オプションセットを使用して行います。オプションセットは、任意の数の料理に割り当てることができるオプションの設定可能なセットです。オプションセットでは、以下のような要件を作成することができます
 
-* Select your pizza crust
-* Select one or more sauces
-* Select at least 4 toppings
+* ピザのクラストを選択する 
+* ソースを1つ以上選ぶ 
+* 4種類以上のトッピングをお選びください。
 
 {% hint style="info" %}
-To learn how to create an option set that meets your requirements, read the descriptions of each of the settings available when creating an option set. Each setting is explained in detail. Alternatively, watch our menu setup video above to see us create the above examples.
+お客様の要件を満たすオプションセットを作成する方法については、オプションセットを作成する際に利用できる各設定の説明をお読みください。各設定について詳しく説明しています。または、上記のメニュー設定のビデオを見て、上記の例を作成する様子をご覧ください。
 {% endhint %}
 
-## Dish Tags
+料理のタグ
 
-Tags allow you to highly particular attributes about a dish with a fully customizable visual indicator. You can create tags for attributes such as:
+タグを使用することで、料理の属性をカスタマイズ可能な視覚的インジケータで表示することができます。以下のような属性のタグを作成することができます。
 
-* Spicy
-* Vegan
-* Gluten free
+スパイシー 
 
-## Common Menu Problems
+ビーガン 
 
-### **No menu or categories showing under the store**
+グルテンフリー
 
-For your menu to display in your online store, make sure to add at least one category and one dish to it.
+よくあるメニューの問題
 
-### **Dish images to large**
+ストアの下にメニューやカテゴリが表示されない
 
-We highly recommend that you use the website [https://www.birme.net](https://www.birme.net) or [https://tinypng.com/](https://tinypng.com/) to optimize all your images. Given that the maximum image width is only around 600 pixels, it's best to make sure all your images are no wider than that. This is going to help significantly with your page load time especially for mobile customers.
+オンラインストアで表示されるメニューには、少なくとも1つのカテゴリーと1つの料理を追加するようにしてください。
+
+料理の画像を大きく表示
+
+私たちは、ウェブサイト [https://www.birme.net](https://www.birme.net) または [https://tinypng.com/](https://tinypng.com/) を使用して、すべての画像を最適化することを強くお勧めします。画像の最大幅が約600ピクセルしかないことを考えると、すべての画像がそれ以上にならないようにするのがベストです。これは、特に携帯電話のお客様のために、ページの読み込み時間を大幅に改善することができます。
 
