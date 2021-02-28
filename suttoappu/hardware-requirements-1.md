@@ -51,19 +51,18 @@ Androidデバイス、Windows、またはLinux PCにドライバーがインス�
 
 
 
-## Recommended Printer
+推奨プリンタ
 
-### Branded Printers
+ブランドプリンター
 
-Organized from lowest to highest price.
+価格の安いものから高いものまで整理。
 
-* [PushPrinter PX-90](https://www.pushprinter.com/#printers) - Available with Ethernet or Bluetooth \(Recommended\)
-* Epson TM-T20 - Available with USB or Ethernet
-* Epson TM-M30 - Bluetooth
-* Epson TM-T82-II-i - USB and Ethernet, supporting many connected devices
-* Star Micronics TSP143 - Available as Bluetooth or USB or WIFI
+* PushPrinter PX-90 - イーサネットまたはBluetoothで利用可能（推奨
+*  Epson TM-T20 - USBまたはイーサネットで利用可能 エプソンTM-M30 - Bluetooth 
+* Epson TM-T82-II-i - USBおよびイーサネット、多くの接続されたデバイスをサポートします。 
+* スターマイクロニクスTSP143 - BluetoothまたはUSBまたはWIFIとして利用可能
 
-## Ideal Setup
+**理想的なセットアップ**
 
 ![Ideal setup](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1bzr2nv.png)
 

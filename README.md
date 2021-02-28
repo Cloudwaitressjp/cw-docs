@@ -5,7 +5,7 @@ description: >-
 
 # 視察
 
-{% page-ref page="getting-started/" %}
+{% page-ref page="suttoappu/" %}
 
 {% page-ref page="how-to-guides/" %}
 
