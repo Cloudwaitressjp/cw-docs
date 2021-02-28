@@ -1,44 +1,42 @@
 ---
-description: >-
-  Your restaurant services represent the various order types you accept. View
-  our video for an in-depth explanation of all the settings available.
+description: レストランのサービスは、お客様が受け付ける様々な注文の種類を表しています。利用可能なすべての設定についての詳細な説明は、ビデオをご覧ください。
 ---
 
-# Configure Your Services
+# サービスの設定
 
 {% embed url="https://youtu.be/EUW9nZVAE68" caption="Services video tutorial" %}
 
-There are 4 services currently available. They are:
+現在利用可能なサービスは4つあります。それらは以下の通りです。
 
-* Pickup - orders that are picked up in store by customers to take away
-* Delivery - orders that are delivered to the customer's address
-* Dine-in - orders that are placed by customers currently seated in your store
-* Table booking - a reservation made for a later date and time
+* ピックアップ - 店頭でお客様がテイクアウトするためにピックアップされた注文 配送 -
+*  顧客の住所に配送される注文 レストランでのご注文は
+* 、現在お店に着席されているお客様からのご注文となります。 
+* テーブル予約 - 後日の日時を指定しての予約
 
-## How To Configure Your Services
+サービスの設定方法
 
-1. Visit your restaurant dashboard and go to the settings page
-2. Select the "Services" tab and edit your settings as required
+1. レストランのダッシュボードにアクセスし、設定ページに移動します。
+2.  サービス」タブを選択し、必要に応じて設定を編集します。
 
-## Enabling & Disabling Services
+**サービスの有効化と無効化**
 
-You can enable or disable services as needed. Go to the desired service settings and simply toggle the "Enabled" switch to enable or disable it.
+必要に応じて、サービスを有効または無効にすることができます。目的のサービス設定に移動し、「有効」スイッチをトグルするだけで、有効・無効を切り替えることができます。
 
 {% hint style="info" %}
-You must have at least one service enabled
+少なくとも1つのサービスが有効になっている必要があります。
 {% endhint %}
 
-## Service Notes
+サービスノート
 
-You can add custom notes for each service that will be shown to the customer when selected. Useful if you need to convey an important message to your customer
+選択した際にお客様に表示されるサービスごとのカスタムメモを追加することができます。お客様に重要なメッセージを伝える必要がある場合に便利です。
 
-## Order Timings
+ご注文のタイミング
 
-A customer is only able to place an order due immediately if your store is opened. Orders for a later date must be scheduled within your opening hours. As such, order timings are mostly controlled by your store opening hours. From there, each service has it's own separate order timing settings that allow your more in-depth control.
+お客様は、お客様のお店が営業している場合に限り、すぐに期限のある注文をすることができます。後日のご注文は、お店の営業時間内に予定されている必要があります。このように、注文のタイミングは、ほとんどの場合、あなたの店舗の営業時間によって制御されます。そこから、各サービスには、より詳細な制御を可能にする独自の独立した注文タイミングの設定があります。
 
-### Enabling & Disabling Order Times
+注文時間の有効化と無効化
 
-Under the "Order Timings" tab in the service settings, you can enable and disable both immediate and scheduled orders.
+サービス設定の「注文のタイミング」タブでは、即時注文と予定注文の両方を有効にしたり、無効にしたりすることができます。
 
 ### First Order Offset
 
