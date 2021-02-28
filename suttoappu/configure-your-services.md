@@ -38,40 +38,33 @@ description: レストランのサービスは、お客様が受け付ける様�
 
 サービス設定の「注文のタイミング」タブでは、即時注文と予定注文の両方を有効にしたり、無効にしたりすることができます。
 
-### First Order Offset
+ファーストオーダーオフセット
 
-This is the period of time from when your store first opens to when you will accept the first order. For example, if the first order offset is set to 30 minutes and your store opens at 9:00am, the first order can be placed or scheduled at 9:30am.
+これは、あなたのお店が最初にオープンしてから最初の注文を受け付けるまでの期間です。例えば、最初の注文のオフセットが30分に設定されていて、あなたのお店が午前9時にオープンした場合、最初の注文は午前9時30分に発注または予定されます
 
-### Last Order Offset
+ラストオーダーオフセット
 
-This is the period of time from when your store closes to when the last order will be accepted. For example, if the last order offset is set to 30 minutes and your store closes at 9:00pm, the last order can be placed or scheduled at 8:30pm.
+これは、あなたのお店が閉店してから最後の注文を受け付けるまでの期間です。例えば、ラストオーダーのオフセットが30分に設定されていて、お客様の店舗が午後9時に閉店する場合、ラストオーダーは午後8時30分に発注または予定されます
 
-### Order Offset
+注文オフセット
 
-The normal order offset only applies for scheduled orders at a later time. This is the period from now when a scheduled order can be made. For example, it's there to prevent customers from scheduling order in the next 10 minutes instead of just asking for it to be due ASAP.
+通常の注文オフセットは、後からの予定注文にのみ適用されます。これは、スケジュールされた注文が可能な今からの期間です。例えば、顧客が注文を予定している時間が10分後になるのを防ぐために存在しています。 ですから、例えば、あなたの注文のオフセットが30分で、現在の時間が18:00であれば、顧客が次に注文をスケジューリングできる時間は19:00になります。もし彼らが午後7時前にそれを希望する場合、彼らはまだ代わりにASAPのために注文することができます。注文オフセットが15分だった場合、顧客は午後6時30分に注文することができます。 注文オフセットはまた、注文スケジュールに間に合うように時間を与えるためのカットオフポイントとしても機能します。例えば、午後6時で注文オフセットが30分だったとします。顧客が午後7時に注文をスケジューリングしている場合、顧客は午後6時30分までに注文をしなければなりません。これは、予定していた時間に間に合うように30分を与えるためです。 もし時間がかかりすぎて午後6時30分を過ぎてしまった場合は、注文が予定時間の午後7時ではなく、ASAPに変更されたことを知らせる通知が送られてきます。
 
-So for example, if your order offset is 30 minutes and the current time is 6:00pm, the next time a customer can schedule an order would be 7:00pm. If they want it before 7:00pm, they can still just order for ASAP instead. If the order offset was 15 minutes, then the customer can order for 6:30pm.
+カスタムサービス時間
 
-The order offset also acts as a cut-off point to give you time to meet the order schedule. For example, if it's 6:00pm and your order offset is 30 minutes. If the customer is scheduling an order for 7:00pm, they must place the order before 6:30pm. This is to give you 30 minutes to meet the scheduled time.
+各サービスにはそれぞれ独立した営業時間を設定することができます。特定のサービスにカスタム営業時間を設定すると、お客様の店舗で設定された営業時間よりも優先されます。
 
-If they take too long and the time passes 6:30pm, they will receive a notification to tell them that the order has been changed to due ASAP instead of their scheduled time, 7:00pm.
+待ち時間の目安と自動ステータス
 
-## Custom Service Hours
+注文と顧客の期待をより良く管理するために、注文の待ち時間を計算し、ステータスを自動的に更新する合理化された方法を提供します。6つの注文ステータスがあります。
 
-Each service can have its own independent operating hours. Setting custom operating hours for a particular service will override the operating hours set for your store location.
+* 未確認 
+* 確認済み 
+* 準備完了 
+* オンルート（配達のみ
+*  完結 キャンセル
 
-## Estimated Wait Times & Auto Statuses
-
-To help you better manage your orders and customer expectations, we provide a streamlined way to calculate order wait times and automatically update statuses. There are 6 order statuses:
-
-* Un-confirmed
-* Confirmed
-* Ready
-* On Route \(delivery only\)
-* Complete
-* Cancelled
-
-Both estimated wait times and automated status updates are connected to the same timing settings. This is so that your status updates and wait times are in sync with each other. This avoids any customer confusion. These timing settings are:
+推定待ち時間と自動ステータス更新は、両方とも同じタイミング設定に接続されています。これは、ステータス更新と待ち時間が互いに同期するようにするためです。これにより、顧客の混乱を避けることができます。これらのタイミング設定は
 
 | Setting \(minutes\) | From Status | To Status |
 | :--- | :--- | :--- |
@@ -81,129 +74,137 @@ Both estimated wait times and automated status updates are connected to the same
 | Time till complete | Ready | Complete |
 
 {% hint style="info" %}
-* Time till confirm is the time between when an order is placed to when it's confirmed. Setting time till confirm to "0" will result in instant order confirmation. You will need to also enable auto status for the confirmed status.
-* Time till ready is the time it takes you to prepare an order after it's confirmed
-* The time till on route status is effectively the time between when an order is prepared to when it is taken by the delivery driver.
-* Time till complete is useful for automatically marking orders as complete
+* 確認までの時間とは、注文が確定するまでの時間のことです。確認までの時間を「0」に設定すると、注文が確定するまでの時間が短くなります。また、
+* 確定状態の自動ステータスを有効にする必要があります。 準備完了までの時間は、注文確定後の準備にかかる時間です。
+*  ルート上の状態になるまでの時間とは、注文が準備されてから配送ドライバーに運ばれるまでの時間のことです。 
+* 完了までの時間は、注文を完了として自動的にマークするのに便利です。
 {% endhint %}
 
-### Estimated Wait Times
+待ち時間の目安
 
-A stated, customer wait times are calculated using the above timing settings.
+前記タイミング設定により、前記顧客の待ち時間を算出することを特徴とする，記載の
 
-#### How estimated wait time are calculated for pickup or dine-in orders
+**ピックアップまたはお店でのご注文の際の待ち時間の計算方法について**
 
-For pickup and dine-in orders, the estimated wait time is calculating but adding the **time till confirm** with the **time till ready** values. So for example, if your **time till confirm** was 5 and your **time till ready** was 20. The customer would get an estimated wait time of 20 + 5 = 25 minutes.
+ピックアップとレストランでのご注文の場合は、推定待ち時間を計算していますが、確認までの時間と準備ができるまでの時間を加算しています。例えば、確認までの時間が5分で、準備が整うまでの時間が20分だったとします。顧客は、20 + 5 = 25分の推定待ち時間を取得します。 
 
-If you have not added a value for time till confirm or time till ready, the estimated wait time would not be calculated.
+確認までの時間や準備が整うまでの時間に値を追加していない場合、推定待ち時間は計算されません。
 
-#### How estimated wait time is calculate for delivery orders
+**どのように推定された待ち時間は、配信注文のために計算されます**
 
-For deliveries, the wait time is calculating by adding the **time till confirm** + **time till ready** + **time till on route** together. Then the **driving time** is added onto that. The driving time is determined using an external service that takes into account traffic data. This provides the customer with an extremely accurate wait time for their order to be delivered. Assuming
+配達の場合は、確認までの時間＋準備が整うまでの時間＋ルート上の時間を足して待ち時間を計算しています。そして、そこに走行時間を加算しています。走行時間は、交通データを考慮した外部サービスを利用して決定されます。これにより、お客様は非常に正確な注文の待ち時間を知ることができます。
 
-If you have not added a value for time till confirm or time till ready or time till on route, the delivery time would not be calculated.
+仮定 確認までの時間、または準備が整うまでの時間、またはルート上の時間に値を追加していない場合、配送時間は計算されません。
 
-### Automated Statuses
+**自動化されたステータス**
 
-Automated statuses change an order's status after a set period of time has passed. This will allow you to do things such as:
+自動化されたステータスは、設定された期間が経過した後に注文のステータスを変更します。これにより、以下のようなことが可能になります。
 
-* Automatically confirm new orders
-* Mark orders as ready after a period of time
-* Mark orders as complete after a period of time
+新規注文の自動確認
 
-This is very helpful if you know your business timings well and don't want to manually be updating order statuses. Auto status updates can also be enabled or disabled on a per status basis. This way you can provide estimated wait times without auto-updating statuses. Or you can just instantly confirm orders and handle the rest manually.
+ 一定期間後に準備ができたものとして注文をマークする 
 
-For automated status updates to work, you will need to enable it for a particular status and ensure the timing settings are added to that particular status.
+一定期間後に完了したものとして注文をマークする これは、ビジネスのタイミングをよく知っていて、手動で注文ステータスを更新したくない場合に非常に便利です。自動ステータス更新は、ステータスごとに有効または無効にすることができます。この方法では、ステータスを自動更新することなく、推定待ち時間を提供することができます。または、注文を即座に確認し、残りは手動で処理することもできます。 自動ステータス更新を有効にするには、特定のステータスで有効にして、タイミング設定がその特定のステータスに追加されていることを確認する必要があります。
 
-#### How automated statuses work
+自動化されたステータスの仕組み
 
-Status updates are dependent on your timing settings, the type of order and the order due time. It's best explained through a series of examples.
+ステータスの更新は、タイミングの設定、注文の種類、注文期限に依存します。それは、一連の例を通して説明するのが最善です。
 
-For the examples, we will assume our timing settings are as follows
+この例では、以下のようなタイミング設定を想定しています。
 
-* Time till confirm - 10 minutes
-* Time till ready - 10 minutes
-* Time till on route - 10 minutes
-* Time till complete - 60 minutes
+* 確認するまでの時間 - 10分 
+* 準備ができるまでの時間 - 10分 
+* ルート上の時間 - 10分 
+* 完了するまでの時間-60分
 
-#### Pickup and dine-in examples
+**ピックアップとダイインの例**
 
-If a customer places an order at 7:00pm for pickup or dine in which is due immediately
+お客様が19:00pmに注文した場合は、すぐにお受け取りになるか、お食事をしていただくことになります。
 
-| Time | Action |
-| :--- | :--- |
-| 7:00pm | Order has been placed, status unconfirmed |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes. This would also be the estimated order ready time as shown to the customer. |
-| 8:20pm | Status updated to complete because time till complete is 60 minutes |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Time</th>
+      <th style="text-align:left">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>19:00</p>
+        <p></p>
+        <p></p>
+      </td>
+      <td style="text-align:left">&#x4E03;&#x6642; &#x6CE8;&#x6587;&#x304C;&#x5165;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#xFF17;&#x6642;&#xFF11;&#xFF10;&#x5206;</td>
+      <td style="text-align:left">
+        <p>&#x78BA;&#x8A8D;&#x307E;&#x3067;&#x306E;&#x6642;&#x9593;&#x304C;10&#x5206;&#x306A;&#x306E;&#x3067;&#x3001;&#x78BA;&#x8A8D;&#x6E08;&#x307F;&#x306B;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+        <p>&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#xFF17;&#x6642;&#xFF12;&#xFF10;&#x5206;</td>
+      <td style="text-align:left">&#x6E96;&#x5099;&#x5B8C;&#x4E86;&#x307E;&#x3067;&#x306E;&#x6642;&#x9593;&#x304C;10&#x5206;&#x306A;&#x306E;&#x3067;&#x3001;&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x306F;&#x6E96;&#x5099;&#x5B8C;&#x4E86;&#x306B;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;&#x3053;&#x308C;&#x306F;&#x3001;&#x9867;&#x5BA2;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x6CE8;&#x6587;&#x306E;&#x6E96;&#x5099;&#x304C;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x6642;&#x9593;&#x306E;&#x76EE;&#x5B89;&#x306B;&#x3082;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">8&#x6642;20&#x5206;</td>
+      <td style="text-align:left">&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x306F;&#x3001;&#x5B8C;&#x4E86;&#x307E;&#x3067;&#x306E;&#x6642;&#x9593;&#x304C;60&#x5206;&#x306A;&#x306E;&#x3067;&#x3001;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;</td>
+    </tr>
+  </tbody>
+</table>
 
-In the event that you added an extra 10 minutes onto the customers estimated order ready time, it will play out as follows:
-
-| Time | Action |
-| :--- | :--- |
-| 7:00pm | Order has been placed, status unconfirmed, you add 10 minutes to estimated ready time |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 7:30pm | Status updated to ready because the old ready time was 7:20pm, since you added an extra 10 minutes, that becomes 7:30pm |
-| 8:30pm | Status updated to complete because time till complete is 60 minutes |
-
-If we are unable to calculate an estimated ready time for the order, for example if the time till confirm was missing, it would play out as follows
-
-| Time | Action |
-| :--- | :--- |
-| 7:00pm | Order has been placed, status unconfirmed |
-| 7:05pm | You manually update the order status to confirmed |
-| 7:15pm | Status updated to ready, because the time till ready is 10 minutes |
-| 8:15pm | Status updated to complete because time till complete is 60 minutes |
-
-If a customer places an order at 6:00pm for pickup or dine in which is due at 7:00pm, the following would occur
-
-| Time | Action |
-| :--- | :--- |
-| 6:00pm | Order has been placed, status unconfirmed |
-| 6:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 7:00pm | Status updated to ready, because this is when the customer scheduled the order for |
-| 8:00pm | Status updated to complete because time till complete is 60 minutes |
-
-#### Delivery examples
-
-For the delivery examples, we will assume the driving time between your store and the delivery address is calculated as 10 minutes.
-
-If a customer places a delivery order at 7:00pm which is due immediately
+お客様のご注文準備時間に10分余分に追加した場合、次のように表示されます。
 
 | Time | Action |
 | :--- | :--- |
-| 7:00pm | Order has been placed, status unconfirmed |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes |
-| 7:30pm | Status updated to on route because time till on route is 10 minutes. This would also be shown to you as the driver pickup time |
-| 7:40pm | Order will have been delivered to customer since the driving time is 10 minutes |
-| 8:40pm | Order marked as completed because time till complete is 60 minutes |
+| 7:00pm | 注文が配置されている、ステータスが確認されていない、あなたは推定準備ができて時間に10分を追加します。 |
+| 7:10pm | 確認までの時間が10分なので、確認済みに更新されました。 |
+| 7:30pm | ステータスは、以前の準備ができている時間が午後7時20分だったので、あなたが余分な10分を追加したので、それが午後7時30分になるので、準備ができているに更新されました |
+| 8:30pm | ステータスは完了までの時間が60分であるため、完了するように更新されました。 |
 
-If we were unable to calculate the estimated delivery time and driver pickup time, say if the time till on route was missing, the following would occur
+注文の準備が完了するまでの時間を計算できない場合、例えば、確認までの時間が不足している場合は、次のようになります。
 
 | Time | Action |
 | :--- | :--- |
-| 7:00pm | Order has been placed, status unconfirmed |
-| 7:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 7:20pm | Status updated to ready because time till ready is 10 minutes |
-| 7:40pm | You manually mark the order an on route for delivery |
-| 7:50pm | Order will have been delivered to customer since the driving time is 10 minutes |
-| 8:50pm | Order marked as completed because time till complete is 60 minutes |
+| 7:00pm | 注文が入りました。 |
+| 7:05pm | 注文状況を手動で確認済みに更新します |
+| 7:15pm | ステータスは準備完了までの時間が10分なので、準備完了に更新されました。 |
+| 8:15pm | ステータスは完了までの時間が60分であるため、完了するように更新されました。 |
 
-If a customer places a delivery order at 6:00pm which is due at 7:00pm, the following would occur
+お客様が午後6時にピックアップのための注文をした場合、または午後7時に予定されているダイニングインの場合、次のようなことが発生します。
 
 | Time | Action |
 | :--- | :--- |
-| 6:00pm | Order has been placed, status unconfirmed |
-| 6:10pm | Status updated to confirmed because time till confirm is 10 minutes |
-| 6:40pm | Status updated to ready because delivery time is 10 minutes and time till on route is 10 minutes, which means that the order must be ready by this time if it is going to reach your customer at 7:00pm |
-| 6:50pm | Status updated to on route because the delivery time is 10 minutes, so it has to leave your store at this time. This is also the estimated driver pickup time. |
-| 7:00pm | Order will have been delivered to customer |
-| 8:00pm | Order marked as completed because time till complete is 60 minutes |
+| 6:00pm | 注文が入りました。 |
+| 6:10pm | 確認までの時間が10分なので、確認済みに更新されました。 |
+| 7:00pm | ステータスがreadyに更新されました。 |
+| 8:00pm | ステータスは完了までの時間が60分であるため、完了するように更新されました。 |
 
-If a delivery order is scheduled for a later time but the estimated delivery time could not be calculated, then the ready and on route status will not update automatically.
+デリバリー
+
+納品例については、お客様の店舗からお届け先までの走行時間を10分として計算させていただきます。 お客様が19:00に即日配達のご注文をいただいた場合
+
+| Time | Action |
+| :--- | :--- |
+| 七時 注文が入りました。 午後７時１０分 確認までの時間が10分なので、確認済みに更新されました。 午後７時２０分 準備完了までの時間が10分なので、ステータスは準備完了に更新されました。 七時半 オンルートまでの時間が10分なので、オンルートに更新されました。これはドライバーのピックアップ時間としても表示されます。 七時四十分 運転時間が10分なので、ご注文はお客様にお届けしております。 八時四十分 完了までの時間が60分なので、完了と表示された注文 |  |
+
+配送予定時間とドライバーの引き取り時間を計算できなかった場合、例えばルート上の時間までの時間が抜けていた場合は
+
+|  |  |
+| :--- | :--- |
+| 七時 注文が入りました。 午後７時１０分 確認までの時間が10分なので、確認済みに更新されました。 午後７時２０分 準備完了までの時間が10分なので、ステータスは準備完了に更新されました。 七時四十分 配送のためのルート上の注文を手動でマークします。 午後７時５０分 運転時間が10分なので、ご注文はお客様にお届けしております。 八時五十分 完了までの時間が60分なので、完了と表示された注文 |  |
+
+お客様が午後6時に、午後7時を予定している配送注文をした場合、以下のようになります。
+
+| Time | Action |
+| :--- | :--- |
+| 午後六時 注文が入りました。 午後６時１０分 確認までの時間が10分なので、確認済みの状態に更新されました。 午後六時四十分 ステータスは、配送時間が10分であるため、準備ができているに更新され、ルート上の時間が10分であるため、午後7時にあなたの顧客に到達しようとしている場合は、この時間までに注文が準備ができていなければならないことを意味します。 午後６時５０分 配送時間が10分なので、この時間にお店を出ないといけないので、ステータスをオンルートに更新しました。これはドライバーの集荷予定時間でもあります。 午後7時 注文は顧客に配信されています 八時 完了までの時間が60分なので、完了と表示された注文 |  |
+
+配達予定時刻を後回しにしているのに、配達予定時刻を計算できなかった場合は、準備状況や経路上の状況は自動的に更新されません。
 
 {% hint style="info" %}
-If ever in doubt about how the auto status timings will work for you scenario, just think about how it would logically work in a way that makes sense to your customer and you. That is how we have designed it to work.
+自動ステータスのタイミングがどのようにあなたのシナリオのために機能するのか疑問に思ったことがあれば、あなたの顧客とあなたにとって意味のある方法で論理的にどのように機能するのかを考えてみてください。それが私たちが設計した方法です。
 {% endhint %}
 

@@ -1,29 +1,33 @@
 ---
 description: >-
-  When you first create your restaurant, the default theme is relatively blank.
-  It's up to you to customise it to represent your brand. Design settings are
-  located under the settings page in the design
+  あなたが最初にレストランを作成するとき、デフォルトのテーマは比較的空白です。あなたのブランドを表現するためにカスタマイズするのはあなた次第です。デザインの設定は、デザインの設定ページの下にあります。
 ---
 
-# Customize Your Design
+# デザインのカスタマイズ
 
 {% embed url="https://youtu.be/g3ibBakpqMU" caption="Design video tutorial" %}
 
-## How To Customize Your Design
+デザインをカスタマイズする方法 
 
-1. Visit the restaurant settings page and go to the design tab
-2. Press "Open Design Mode" to open up the site design editor
-3. Go through each of the setting sections and customize options as needed 
+レストランの設定ページにアクセスして、
 
-## Quickstart Recommendation
+デザインタブに移動します。
 
-To get a great looking site quickly, just use our base theme, add your logo and add a nice header background image. It also helps to have a nice header title and subtitle.
+ デザインモードを開く」を押してサイト
 
-\|\| We recommend using a PC or tablet to design your site for the best experience
+デザインエディタを開く それぞれの設定セクションを通過し、必要に応じてオプションをカスタマイズします。
 
-## Recommend Images Dimensions
+**クイックスタートのすすめ**
 
-* Logo image - 300 pixels wide by 100 pixels high wide
-* Header image - 1920 pixels wide by 500 pixels high
-* Logo icon - 350 by 350 pixel square
+すぐに素晴らしい外観のサイトを取得するには、ちょうど私たちのベーステーマを使用して、あなたのロゴを追加し、素敵なヘッダーの背景画像を追加します。また、ヘッダーのタイトルとサブタイトルをつけるのも良いでしょう。 
+
+\|\| PCやタブレットを使ってサイトをデザインすることをお勧めします。
+
+おすすめ画像 寸法 
+
+ロゴイメージ - 横幅300ピクセル×縦幅100ピクセル 
+
+ヘッダー画像 - 幅1920ピクセル×高さ500ピクセル 
+
+ロゴアイコン - 350×350ピクセルの正方形
 
