@@ -1,27 +1,18 @@
 ---
-description: >-
-  Get started creating your account, restaurant and setting up your menus. Place
-  a test order and see the order management process.
+description: アカウント、レストランの作成、メニューの設定を始めましょう。テスト注文をして、注文管理プロセスを確認してください。
 ---
 
-# 10-Minute Quickstart
+# 10 分間のクイックスタート
 
 {% embed url="https://youtu.be/Cd171XS0IGI" caption="Quickstart video tutorial" %}
 
-## Quick-start Steps
+**クイックスタートステップ**
 
-1. Visit [https://www.cloudwaitress.com](https://www.cloudwaitress.com) and sign up for an account
-2. Once you are at the admin dashboard, press "Create New Restaurant"
-3. Fill out your restaurant details and create the restaurant
-4. Click on your new restaurant to see the restaurant dashboard
-5. On the left menu, visit the "Menus" section
-6. Create a menu, create a category and then create a standard dish under it
-7. On the left menu, click on "Orders" to view the order management interface
-8. Open up your online store in a new tab by pressing "Visit Store" on the left menu
-9. Place an order through your website
-10. See the order come through automatically on your orders page. Select the order and try changing the order status or wait time. Use the "Actions" select to delete the test order when done
+[https://www.cloudwaitress.com](https://www.cloudwaitress.com) にアクセスして、アカウントにサインアップしてください。 管理画面に移動したら、"Create New Restaurant "を押してください。 レストランの詳細を記入して、レストランを作成します。 新しいレストランをクリックすると、レストランのダッシュボードが表示されます。 左メニューの「メニュー」セクションにアクセスします。 メニューを作成し、カテゴリーを作成し、その下に定番の料理を作成する 左メニューの「注文」をクリックして、注文管理インターフェイスを表示します。 左メニューの "Visit Store "を押して、新しいタブでオンラインストアを開きます。 あなたのウェブサイトから注文する 注文ページで注文が自動的に行われるのを確認します。注文を選択し、注文状況や待ち時間を変更してみてください。完了したら "アクション "を選択して、テスト注文を削除します。
 
-## What's Next
 
-At this point, you can customise the system as you please and start accepting orders. We recommend you continue reading the articles in this section. You will learn how to configure the system to your requirements and manage orders in-depth.
+
+**1-**は何をするのか?
+
+この時点で、自分の好きなようにカスタマイズして、受注を開始することができます。このセクションの記事を読み続けることをお勧めします。あなたの要件に合わせてシステムを設定し、注文を詳細に管理する方法を学ぶことができます。
 
