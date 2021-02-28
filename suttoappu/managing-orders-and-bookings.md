@@ -1,47 +1,39 @@
 ---
 description: >-
-  Once the orders begin coming in, you need to be ready to fulfill them. As
-  such, it's important that understand the order management workflow for
-  everything to operate smoothly.
+  注文が入ってきたら、それを満たすための準備をしなければなりません。このように、すべてがスムーズに動作するためには、受注管理のワークフローを理解しておくことが重要です。
 ---
 
-# Managing Orders & Bookings
+# 注文と予約の管理
 
-## Receiving Orders
+**受注状況**
 
-### In-Store Setup
+**店頭設定**
 
-To completely manage the orders lifecycle, you will need to have an internet enabled device in-store. We highly recommend using a Windows laptop or tablet with either Chrome or Firefox for the greatest compatibility.
+注文のライフサイクルを完全に管理するためには、店頭でインターネットに対応したデバイスが必要です。最高の互換性を得るためには、ChromeまたはFirefoxを搭載したWindowsのラップトップまたはタブレットを使用することを強くお勧めします。 このデバイスは、オンライン注文の責任者が簡単に注文を確認、アクセス、更新できる場所に設置する必要があります。
 
-This device will need to be placed in an area where whoever is responsible for online orders can easily check, access and update orders.
+注文管理インタフェース
 
-### Order Management Interface
+レストランのダッシュボードにアクセスし、注文ページに移動します。インターフェイスはリアルタイムで更新されますので、ページを更新する必要はありません。
 
-Visit your restaurant dashboard and navigate to the orders page. The interface updates in real-time with new orders so you do not need to refresh the page.
+注文管理インターフェースには、いくつかの重要な機能があります。
 
-There are several key features of the order management interfaces:
+* ご注文が集荷なのか、配達なのか、お食事なのかは、左側のアイコンで簡単に確認できます。 アイコンの色は、注文の現在の状態を表しています。 注文をクリックすると、その注文の詳細を表示したり、更新を行うことができます。
 
-* You can easily see whether an order is a pickup, delivery or dine-in by the icon on the left. 
-* The colour of the icon is a representation of the order's current status.
-* You can click an order to view the details of it and make updates
-
-### **Board View**
+ボードビュー
 
 ![Board view](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1l3lo9y.png)
 
-The board view is fantastic for actually managing orders in real-time. Orders flow from left to right along the different status columns.
-
-In the board view, the **due** time is the time when the customer will be coming to collect the order. For deliveries, the **start delivery** time is when the order must leave your store to reach the customer at their selected time.
+ボードビューは、実際にリアルタイムで注文を管理するのに最適です。注文は左から右へと、さまざまなステータス列に沿って流れていきます。 ボードビューでは、納期は顧客が注文を受け取りに来る時間です。配送の場合、配送開始時間は、注文が店舗を出発して顧客の指定した時間に顧客に届くまでの時間です。
 
 ### **List View**
 
 ![List view](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_11088vc.png)
 
-The list view provides you with an overview of your latest orders 10, 25, 50 or 100 orders. This view is perfect for filtering through orders and searching for specific ones. It is not well suited to actively managing orders.
+リスト表示では、最新の注文の概要を10、25、50、100件の注文を見ることができます。この表示は、注文をフィルタリングしたり、特定の注文を検索したりするのに最適です。注文を積極的に管理するのには適していません。
 
-### Viewing An Order's Details
+注文の詳細を表示する
 
-Once you select an order, you will see a popup showing you the details of your order.
+ご注文を選択すると、ご注文の詳細を表示するポップアップが表示されます。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_8eby9d.png)
 
