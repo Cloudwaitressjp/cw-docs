@@ -37,75 +37,78 @@ description: >-
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_8eby9d.png)
 
-Here you are able to do the following functions
+ここでは、以下の機能を実行することができます。
 
-* Change status - update the order status
-* Modify est ready time - update on the customer's receipt how long till the order is ready
-* Other actions - print orders, book for delivery, refund payments, delete the order
+* ステータスの変更 - 注文ステータスを更新します。
+*  準備が整うまでの時間を顧客のレシート上で更新します。
+*  その他のアクション - 注文の印刷、配送予約、支払いの払い戻し、注文の削除
 
-## How To Manage Orders
+**注文を管理する方法**
 
-To actively manage orders, use the board view and follow the process below.
+積極的に受注を管理するためには、ボードビューを使用し、以下のプロセスに従ってください。
 
-1. Confirm or cancel any new orders received in the **Un-Confirmed** column.
-2. Orders in the **Confirmed \(Due Soon\)** column are due in the next 2 orders. Simply prepare the orders from the top to bottom to meet the time they are due
-3. Orders in the **Confirmed \(Up-Coming\)** section are due any time after 2 hours. You can keep an eye on what's upcoming with this.
-4. When the order has been prepared, move it to the **Ready** column for customer or driver collection.
-5. If it is a delivery, move it to the **On Route** column once the driver has taken it.
-6. Finally, mark orders as complete when the customer collects it or the food has been delivered.
+1. 未確認」欄にある新規受注を確認またはキャンセルします。
+2.  Confirmed \(Due Soon\) 欄に表示されている注文は、次の 2 つの注文の期限です。注文を上から下に向かって準備していくだけで、納期に間に合わせることができます。 Confirmed（Up-Coming）欄の注文は、2時間後のいつでも締め切りとなります。これで近日中に何が起こるかを確認することができます。 
+3. 注文が準備されたら、顧客またはドライバーが取りに行くためにReady列に移動します。 
+4. それが配達の場合は、ドライバーがそれを取ったら、それをOn Routeの列に移動します。
+5.  最後に、顧客が注文を回収したり、食材が配送されたりした時点で、注文を完了とマークします。
+6. \|\| 注文をクリックすると詳細が表示されます。注文をクリックすると詳細が表示されます。Modify Est.Ready Time "セレクトバーを使用して、注文の準備に必要な時間を追加します。Ready Time "セレクトバーを使用して、注文の準備に必要な余分な時間を追加します。このようにして、顧客は遅延を認識することができます。
 
-\|\| If you are unable to prepare an order by the due time, you increase the due time manually. Click an order to view the details. Using the "Modify Est. Ready Time" select bar, add the extra time required to prepare the order. This way your customers are aware of any delays.
+**注文状況**
 
-### Order Statuses
+注文管理ボードには6つの異なる注文状況が表示されます。 
 
-There are 6 different order statuses as indicated by the columns on the order management board.
+未確認 - 新規の注文で、まだ受け付けていないもの 確認済み - お客様が承諾した注文で、履行される予定のもの
 
-* Un-confirmed - new orders that are not accepted yet
-* Confirmed - orders that you have accepted and will fulfil
-* Ready - prepared orders ready for customer or driver collection
-* On Route - orders currently with the delivery driver \(delivery only\)
-* Complete - orders that have been completed fulfilled
-* Cancelled - orders that will not be fulfilled
+ 準備ができている - 顧客やドライバーの集荷のための注文の準備ができている
 
-Updating the order status will update your customers in real-time about the status of their order.
+ オンルート - 現在配送ドライバーと一緒に注文（配送のみ 
 
-### What Happens When An Order Is Placed
+完了 - 完了した注文は履行されています。 キャンセル - 履行されない注文 
 
-Every time a new order is received, several things will happen.
+注文状況を更新することで、お客様の注文状況をリアルタイムで更新することができます。
 
-* A sound notification will play if enabled
-* If device notifications are enabled, you will receive one
-* If automated printing is configured, the order will be printed at the respective printer
-* You will receive an e-mail notification if configured
-* The new order will automatically be loaded into the orders interface
+**注文が入るとどうなるか**
 
-## Notifications
+新しい注文が入るたびに、いくつかのことが起こります。 
 
-### Device Notifications
+有効にしている場合は、サウンド通知が再生されます。
 
-We highly recommend that you have device notifications enabled if your device supports it. When you first load the admin dashboard, your web browser will ask you if you would like to allow notifications. Please make sure that you allow this.
+ デバイス通知が有効になっている場合は、以下のいずれかの通知が届きます。
 
-If you did not, you will need to manually enable them from your web browser settings. This is different for every browser. For chrome on a PC, you can do this by clicking the secure lock icon beside the website URL in the address bar. This will drop down the permissions window where you can enable notifications for the current page you are on.
+ 自動印刷が設定されている場合、注文はそれぞれのプリンタで印刷されます。
 
-### E-Mail Notifications
+ 設定されている場合は、電子メールで通知を受け取ることができます。 
 
-You can configure up to 3 email addresses to receive notifications on. Simply visit "Settings &gt; E-mail Notifications" and configure the settings there. E-mail notifications will also include a PDF copy of the order receipt.
+新しいオーダーは自動的にオーダーインターフェイスにロードされます
 
-### Audio Notifications
+**お知らせ**
 
-Audio notifications can be configured at "Settings &gt; Audio Notifications". One useful aspect to this is you can configure a sound to play until someone has tapped / clicked the screen. This is helpful to get someones attention that a new order has come through.
+デバイス通知 
 
-### Automated Printing
+お使いのデバイスがデバイス通知をサポートしている場合は、デバイス通知を有効にすることを強くお勧めします。管理者ダッシュボードを最初にロードすると、Webブラウザが通知を許可するかどうかを尋ねてきます。これを許可していることを確認してください。
 
-If you have automated printing set up, this serves as a valuable notification for new orders. Learn how to set it up through our printing setup guide.
+ 許可していない場合は、ウェブブラウザの設定から手動で有効にする必要があります。これはブラウザによって異なります。PCのクロームの場合は、アドレスバーのウェブサイトURLの横にあるセキュアロックのアイコンをクリックしてください。これは、現在のページの通知を有効にすることができる権限ウィンドウをドロップダウンします。
 
-## Train Your Staff
+電子メール通知 
 
-Implementing an online ordering system if you have never done so before requires some changes. Most importantly all staff must be aware that new orders can come through and must be attended to.
+通知を受信するメールアドレスを3つまで設定することができます。設定＞メール通知」から設定してください。メールでの通知には、ご注文の領収書のPDFが含まれています。
 
-## Managing Bookings
+音声通知
 
-Bookings are managed very similarly through the bookings page. When a new booking is placed, it will start as unconfirmed. Verify that you can accept it and then manually update the booking status to confirmed or cancelled.
+ 音声通知は「設定 &gt; 音声通知」で設定できます。これに便利な側面としては、誰かが画面をタップ/クリックするまで再生するサウンドを設定することができます。これは、新しい注文が通ってきたことをいくつかの人の注意を引くのに便利です。
 
-This will notify your customer respectively. You can then pencil this booking into your calendar if needed.
+自動印刷 
+
+自動印刷を設定している場合は、新規注文の際の貴重な通知として機能します。印刷設定ガイドで設定方法をご確認ください。
+
+スタッフのトレーニング 
+
+今までに一度もそうしたことがない場合、オンライン注文システムを導入するにはいくつかの変更が必要です。最も重要なことは、すべてのスタッフは、新しい注文が通過してくることができ、出席しなければならないことを認識している必要があります。
+
+予約の管理 
+
+予約は予約ページでも同様に管理されています。新しい予約が入ると、未確認の状態で始まります。お客様が予約を受け入れることができるかどうかを確認してから、予約状況を手動で確定またはキャンセルに更新してください。
+
+ これにより、お客様に通知されます。必要に応じて、この予約をカレンダーに登録することができます。
 
