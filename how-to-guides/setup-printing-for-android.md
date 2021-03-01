@@ -1,72 +1,69 @@
 ---
-description: >-
-  Learn how to setup and configure order printing for Android devices with our
-  printing software
+description: 当社の印刷ソフトウェアを使用して、Androidデバイス用の注文印刷を設定・設定する方法をご紹介します。
 ---
 
-# Setup Printing For Android
+# Android用の設定印刷
 
-Our system allows you to manually and automatically print out new orders. This guide will show you how to set order printing and troubleshoot issues.
+当社のシステムでは、新規注文を手動および自動で印刷することができます。このガイドでは、注文印刷の設定方法や問題のトラブルシューティング方法をご紹介します。
 
-\|\| We are happy to remotely set up your printer for you. We know this is a step that can trip up many people due to every printer being a bit different. Please get in touch with us if you need assistance.
+\|\| プリンターの設定を遠隔操作で行います。プリンターの種類によっては、これは多くの人を悩ませるステップであることを知っています。ご不明な点がございましたら、お気軽にお問い合わせください。
 
-## Requirements
+必要条件
 
-* An Android device with Android 1.4 or above
-* A ESC/POS compatible printer
-* Latest version of PushPrinter that can be downloaded [here](https://www.pushprinter.com)
+* Android 1.4以上のAndroid端末 
+* ESC/POS対応プリンタ 
+* ダウンロードできるPushPrinterの最新版 ここから
 
-## Setup Process
+**セットアッププロセス**
 
-### Create A Printer Configuration
+**プリンタの設定を作成する**
 
-1. Visit your restaurant dashboard and navigate to "Settings &gt; Receipt Printing"
-2. Press the "New Printer" button and fill out any options needed
-3. On the "Printer Settings" tab, set your Printer Method to 'ESCPOS' and ESCPOS Printing Type to 'ESCPOS Image'.  Note that some older printers may not support this method and ESCPOS Text Only can be used in these cases.
-4. The defauly paper settings work for most printers.  If the test print is cutting of the edge of the text, please adjust the Paper Scale Factor to 1.7 and test again.
-5. Create the print configuration. After creating it, you will get a unique API key to connect to it. Keep this screen open as you will need to copy your API key soon.
+1. レストランのダッシュボードにアクセスし、「設定 &gt; 領収書の印刷」に移動します。
+2.  新しいプリンタ」ボタンを押して、必要なオプションを記入します。 
+3. プリンタ設定」タブで、プリンタ方式を「ESCPOS」に、ESCPOS 印刷タイプを「ESCPOS 画像」に設定します。 古いプリンタの中には、この方法に対応していないものもあり、そのような場合は ESCPOS テキストのみを使用することができます。 
+4. ほとんどのプリンタでは、デフォルトの用紙設定が有効です。 テスト印刷でテキストの端が切れてしまう場合は、用紙のスケール係数を1.7に調整してから再度テストしてください。
+5.  印刷設定を作成します。作成後、接続するための固有のAPIキーを取得します。すぐにAPIキーをコピーする必要があるので、この画面を開いておきましょう。
 
 ![Printer Settings for Android](../.gitbook/assets/printer-settings.png)
 
 ![Printer API key](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_bnxer6.png)
 
-### Install PushPrinter
+**PushPrinter のインストール**
 
-1. Download PushPrinter from the following [link](https://www.pushprinter.com)
-2. After it is installed successfully, PushPrinter will automatically open
+1. 以下の[リンク](www.pushprinter.com)からPushPrinterをダウンロードしてください。 
+2. 正常にインストールされると、PushPrinterは自動的に
 
-### Configure PushPrinter
+**PushPrinterの設定**
 
-1. Press the "Settings Cog" and select Default.
-2. Press on the "Printer Icon" tab at the top to configure a printing service
-3. Copy and paste the API key for the printer you created 2 steps ago
-4. Set the number of copies to print and select your printer
-5. Press the test print button
-6. Press the "Create Printer" button and make sure it says connected at the bottom
+1. 設定コグ」を押し、「デフォルト」を選択します。 
+2. 上部の「プリンタアイコン」タブを押して、印刷サービスを設定します。
+3.  2ステップ前に作成したプリンタのAPIキーをコピーして貼り付けます。
+4.  印刷する部数を設定し、プリンタを選択します。
+5.  テスト印刷ボタンを押す プリンターの作成」ボタンを押して、下部に接続と書いてあることを確認します。
 
-### Test Print
+テストプリント
 
-Visit your orders page. Select an order, under the action select bar, select print. We recommend printing both short and long orders to ensure that there is nothing being cut out vertically. If you have enabled auto-printing for this print configuration, place an order and test out the auto printing
+注文ページにアクセスします。注文を選択し、アクションセレクトバーの下にある「印刷」を選択します。縦方向に何も切り取られていないことを確認するために、短い注文と長い注文の両方を印刷することをお勧めします。この印刷設定で自動印刷を有効にしている場合は、注文をして自動印刷をテストしてください。
 
-## Troubleshooting
+トラブルシューティング
 
-#### Contact Us
+お問い合わせ
 
-We have successfully setup 100's of printers, there is a good chance we can save you lots of headaches so please don't hesitate to contact us.
+私達は首尾よくプリンターの100'sをセットアップした、私達があなたの頭痛の多くを救ってもいいチャンスがある従って私達に連絡することを躊躇しないで下さい。
 
-#### Sides being cut-off
+**切り取られている側面**
 
-Start by reducing either your Paper Scale Factor to 1.7 and test print again. Adjust until it fits.
+ペーパースケールファクターを1.7に下げてから、再度テスト印刷をしてください。フィットするまで調整します。
 
-#### Invalid API Key
+**無効なAPIキー**
 
-The API key you entered does not below to any of your print configurations. Double check your API key
+入力したAPIが有効でないか、正しくないかを確認してください
 
-#### Could Not Authenticate
+認証できませんでした
 
-Check your internet connection or try again shortly
+インターネット接続を確認するか、すぐに再試行してください。
 
-#### Printing not working even though everything is set up correctly
+すべてが正しく設定されているにもかかわらず、印刷ができない
 
-Please ensure that Android detects your printer. Try restarting your device. Try printing to your printer from other programs on your PC such as your browser.
+Androidがプリンターを検出していることを確認してください。デバイスを再起動してみてください。ブラウザなどPCの他のプログラムからプリンタに印刷してみてください。
 

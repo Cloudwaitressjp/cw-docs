@@ -1,34 +1,32 @@
 ---
-description: >-
-  Learn about the different types of customer accounts available and how they
-  work within the platform
+description: 利用可能なさまざまなタイプの顧客アカウントと、プラットフォーム内での機能について学ぶことができます。
 ---
 
-# Customer Accounts
+# 顧客アカウント
 
-Customers include people who have placed an order at your online store or signed up for an account. From the restaurant perspective, it's about being able to track and understand your customers. For customers, having an account means their information is saved permanently across devices. This includes delivery details, customer info and past orders. This information will be used to pre-fill as many steps of their ordering process for a smoother repeat purchase experience.
+顧客とは、オンラインストアで注文をしたり、アカウントにサインアップしたりした人を指します。レストランの観点から言えば、顧客を追跡し、理解することができるということです。顧客にとって、アカウントを持つことは、彼らの情報がデバイス間で永久に保存されることを意味します。これには、配達の詳細、顧客情報、過去の注文が含まれます。この情報は、よりスムーズなリピート購入の経験のために彼らの注文プロセスの多くのステップとして事前に入力するために使用されます。
 
-## Types Of Customers
+**顧客の種類**
 
-### Guest Customers
+お客様の声
 
-Guest customers are created whenever an order is placed by a user who has not signed in. We attempt to track guest customers by matching their name, phone and email address. When a guest places an order, if those 3 pieces of information match any past customers, the old customer will be updated instead of a new one being created.
+ゲスト顧客は、サインインしていないユーザーが注文を行うたびに作成されます。我々は、名前、電話番号、および電子メールアドレスを一致させることによって、ゲストの顧客を追跡しようとします。ゲストが注文を置くとき、情報のこれらの3つの部分が過去の顧客と一致する場合は、新しいものが作成されるのではなく、古い顧客が更新されます。
 
 ### Logged In Customers
 
-A logged in customer is anyone who has used the login / sign up button to create an account. When a customer signs up for the first time their details are logged into your customer dashboard. Any subsequent logins or orders will also update their details. Customers who log in will have their order history permanently accessible to them.
+ログインしたお客様とは、ログイン/サインアップボタンを使用してアカウントを作成したお客様のことです。お客様が初めてサインアップすると、お客様の詳細はお客様のダッシュボードにログインされます。それ以降のログインや注文でも、お客様の詳細が更新されます。ログインしたお客様は、注文履歴に永久にアクセスすることができます。
 
-Customers create accounts using:
+お客様が使用してアカウントを作成します。
 
-* E-Mail
-* Facebook 
-* Google
+* メール 
+* フェイスブック 
+* グーグル
 
-## Guides
+**ガイド**
 
 {% page-ref page="../how-to-guides/setup-facebook-login.md" %}
 
-## Caveats & Known Issues
+警告事項と既知の問題
 
-* Google and Facebook log in cannot be used on a mobile app as they have disabled it from being used in such a medium.
+* GoogleやFacebookのログインは、そのような媒体での利用を無効化しているため、モバイルアプリでは利用できません。
 
