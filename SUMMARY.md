@@ -8,7 +8,7 @@
   * [サービスの設定](suttoappu/configure-your-services.md)
   * [デザインのカスタマイズ](suttoappu/customize-your-design.md)
   * [注文と予約の管理](suttoappu/managing-orders-and-bookings.md)
-  * [Promoting Your Store](suttoappu/promoting-your-store.md)
+  * [お店の宣伝](suttoappu/promoting-your-store.md)
 * [How To Guides](how-to-guides/README.md)
   * [Setup Printing For Windows](how-to-guides/setup-printing-for-windows.md)
   * [Setup Printing For Android](how-to-guides/setup-printing-for-android.md)
