@@ -26,7 +26,7 @@
   * [Facebook注文の設定](how-to-guides/setup-facebook-ordering.md)
 * [プラットフォーム情報](platform-information/README.md)
   * [顧客アカウント](platform-information/customer-accounts.md)
-  * [Your Subscription & Billing](platform-information/your-subscription-and-billing.md)
+  * [購読と請求](platform-information/your-subscription-and-billing.md)
   * [Special Features](platform-information/special-features.md)
   * [COVID-19 Discount for United Kingdom](platform-information/covid-19-discount-for-united-kingdom.md)
 * [Resellers](resellers/README.md)

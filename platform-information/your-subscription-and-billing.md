@@ -1,45 +1,43 @@
 ---
-description: >-
-  Learn how to modify your subscription, add a payment method and manage your
-  account billing
+description: サブスクリプションの変更、支払い方法の追加、アカウントの請求書の管理方法について説明します。
 ---
 
-# Your Subscription & Billing
+# 購読と請求
 
-## Changing Subscription Plan
+**加入プランの変更**
 
-1. Visit [https://admin.cloudwaitress.com](https://admin.cloudwaitress.com) and login
-2. Click **billing** on a restaurant in your restaurant list
-3. In the popup, select your subscription plan and press "Edit Subscription"
-4. Choose your plan from the drop down and press "Update Subscription"
+1. [https://admin.cloudwaitress.jp](https://admin.cloudwaitress.jp) にアクセスしてログイン 
+2. レストランリストのレストランで課金をクリックします。
+3.  ポップアップで、購読プランを選択し、「購読の編集」を押します。 
+4. ドロップダウンからプランを選択し、"Update Subscription "を押します
 
-\|\| You will need to add a payment method before switching to a paid plan
+\|\| 有料プランに切り替える前に支払い方法を追加する必要があります
 
-## Add A Payment Method
+お支払い方法の追加
 
-We currently only accept, Visa, MasterCard, and American Express. To add a payment method you must:
+現在、Visa、MasterCard、American Express,JCB ,dinersのみご利用いただけます。お支払い方法を追加するには
 
-1. Visit [https://admin.cloudwaitress.com](https://admin.cloudwaitress.com) and login
-2. Click **billing** on a restaurant in your restaurant list
-3. In the popup, select "Payment Methods" and enter your card details
+1. [https://admin.cloudwaitress.com](https://admin.cloudwaitress.com) にアクセスしてログイン 
+2. レストランリストのレストランで課金をクリックします。
+3.  ポップアップで「お支払い方法」を選択し、カード情報を入力します。
 
-## Billing Cycle
+**課金サイクル**
 
-You will be billed on the same day that your account was activated every month.
+毎月アカウントが有効化された日に課金されます。
 
-## Failed Payments
+**支払いの失敗**
 
-If your payment fails, we will inform you and attempt to charge your card again in 24 hours. If it fails again, we will retry in 3 days and 3 days after if that fails. If the 3rd payment retry fails within 7 days of your initial failed payment, your account will be cancelled.
+お支払いに失敗した場合は、24時間以内にお客様にご連絡し、再度カードへのチャージを試みます。再度失敗した場合は、3日後、失敗した場合は3日後に再チャレンジします。3回目のお支払いの再チャレンジが最初の失敗から7日以内に失敗した場合、お客様のアカウントはキャンセルされます。
 
-## Cancelled Accounts
+**解約したアカウント**
 
-If your account has been cancelled due to a failed payment, you will no longer be able to accept orders. However, your store will still remain online and all your information will be kept.
+お支払いが滞ったためにアカウントがキャンセルされた場合、ご注文を受け付けることができなくなります。しかし、あなたの店はまだオンラインのままであり、すべてのあなたの情報が保持されます。.
 
-## Re-Activating Your Subscription
+**定期購読の再アクティベーション**
 
-If your account is cancelled, add a valid payment method to re-active your subscription.
+アカウントがキャンセルされた場合は、有効なお支払い方法を追加して購読を再アクティブにしてください。.
 
-## Refunds
+**払い戻し**
 
-Refunds will only be provided if our platform fails to meet its stated role when being used. Please contact us to discuss this.
+返金は、当社のプラットフォームが使用されているときにその役割を満たしていない場合にのみ提供されます。ご相談ください。
 
