@@ -12,7 +12,7 @@
 * [ハウツーガイド](how-to-guides/README.md)
   * [Windows用のセットアップ印刷](how-to-guides/setup-printing-for-windows.md)
   * [Setup Printing For Android](how-to-guides/setup-printing-for-android.md)
-  * [Printing - Windows Network Printing](how-to-guides/printing-windows-network-printing.md)
+  * [印刷 - Windows ネットワーク印刷](how-to-guides/printing-windows-network-printing.md)
   * [印刷 - Windows 共有印刷](how-to-guides/printing-windows-shared-printing.md)
   * [印刷 - APIキー](how-to-guides/printing-api-key.md)
   * [ストライプ決済の設定](how-to-guides/setup-stripe-payments.md)

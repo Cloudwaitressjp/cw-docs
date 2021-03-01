@@ -1,76 +1,70 @@
 ---
-description: How to guide to print with a network printer
+description: ネットワークプリンタで印刷するためのガイドの方法
 ---
 
-# Printing - Windows Network Printing
+# 印刷 - Windows ネットワーク印刷
 
-## **Network printing**
+**ネットワーク印刷**
 
-1. Please go to the Windows Control Panel
+1. Windowsのコントロールパネルに移動してください。
 
 ![](../.gitbook/assets/untitled%20%281%29.png)
 
-1. Open Devices and Printers
+1. オープンデバイスとプリンタ
 
 ![](../.gitbook/assets/untitled-1.png)
 
-1. Right click and select 'Printer Properties'
+1. 右クリックして「プリンタのプロパティ」を選択します。
 
 ![](../.gitbook/assets/untitled-2%20%285%29.png)
 
-1. If your printer is not showing use these instructions to set it up [Printer Set up](https://www.notion.so/cloudwaitresswiki/Printing-Add-a-printer-18689e4654fe4978b20aeb82b581d81e).
-2. To test that the printer is working, please press Print Test Page
+1. プリンタが表示されない場合は、以下の手順を使用して設定してください。 プリンタが動作しているかどうかをテストするには、「テストページを印刷する」を押してください。
 
 ![](../.gitbook/assets/untitled-3%20%281%29.png)
 
-1. If the test page does not print. Then please connect and install the printer correctly. Please see : [Printer Set up](https://www.notion.so/cloudwaitresswiki/Printing-Add-a-printer-18689e4654fe4978b20aeb82b581d81e).
-2. Open the PushPrinter for Windows program application
-3. Go to the 'settings' cog and select the default or CloudWaitress provider profile from the dropdown list.
+1. テストページが印刷されない場合 プリンタを正しく接続・設置してください。プリンタのセットアップを参照してください。 Windows用プログラムアプリケーションPushPrinterを開きます。 settings' cogに移動し、ドロップダウンリストからデフォルトまたはCloudWaitressプロバイダプロファイルを選択します。
 
 ![](../.gitbook/assets/untitled-4%20%282%29.png)
 
-1. Enable 'Automatically start PushPrinter'. \(This allows the application to auto-start when resetting your machine\).
+1. Automatically start PushPrinter」を有効にします。\(これにより、マシンのリセット時にアプリケーションが自動的に起動するようになります\)。
 
 ![](../.gitbook/assets/automatically-start-pushprinter.png)
 
-1. Press the printer button
+1. プリンタボタンを押す
 
 ![](../.gitbook/assets/untitled-6.png)
 
-1. Using the Create Printer button, create printer
+1. プリンターの作成ボタンを使用して、プリンターを作成します。
 
 ![](../.gitbook/assets/untitled-7%20%284%29.png)
 
-1. Add settings including API key from the printer just created.
+1. 作成したばかりのプリンタからAPIキーを含む設定を追加します。
 
 {% hint style="info" %}
-**For a network printer:**
-
-* Name the printer. 
-* Add API printer \(found in the store printer settings\), 
-* Set number of copies 
-* Add printer IP address and set port to 9100\).
+ネットワークプリンタの場合。 プリンタの名前を指定します。 APIプリンタを追加します（ストアのプリンタ設定にあります）。 セット部数 プリンタのIPアドレスを追加し、ポートを9100に設定します。\)
 {% endhint %}
 
 ![](../.gitbook/assets/untitled-8%20%283%29.png)
 
 {% hint style="danger" %}
-**NOTE:**
+注: 
 
-**Printer name** - This is the name that the printer will show inside of CloudWaitress.
+プリンタ名 - プリンタ名は、CloudWaitress内で表示される名前です。
 
-**API Key** - This needs to be copied from the printer settings inside of CloudWaitress.
+ プリンタ名 - CloudWaitress内でプリンタが表示する名前です。 
 
-**Number of copies** - This will determine how many copies of the are printed.
+API Key - CloudWaitress内のプリンタ設定からコピーする必要があります。 
 
-**Printing type** - This needs to be set to Windows Shared Printer \(ESCPOS\) for this to work.
+コピー数 - これは、印刷されるコピー数を決定します。
 
-**Windows Share Printer Name** - This must match EXACTLY the shared printer name that was added before. You should avoid spaces and special characters.
+ 印刷タイプ - これを機能させるには、Windows共有プリンタ（ESCPOS）に設定する必要があります。 Windows 共有プリンタ名 - これは、以前に追加された共有プリンタ名と完全に一致している必要があります。
+
+スペースや特殊文字は避ける必要があります。
 {% endhint %}
 
-1. Test print
-2. Create printer
-3. Go to your store and place a test order.
+1. テストプリント 
+2. プリンターの作成 お店に行って、
+3. テスト注文をしてください。
 
 \*\*\*\*
 
