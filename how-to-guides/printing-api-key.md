@@ -1,33 +1,29 @@
 ---
-description: >-
-  How to setup your API key.  This is used to connect your online printing
-  configuration to your PushPrinter application and receipt printer.
+description: APIキーを設定する方法。 これは、オンライン印刷設定をPushPrinterアプリケーションとレシートプリンタに接続するために使用します。
 ---
 
-# Printing - API Key
+# 印刷 - APIキー
 
-1. Login to your CloudWaitress account at [admin.cloudwaitress.com](https://admin.cloudwaitress.com/login?redirect=%2F) and go to Settings&gt;System&gt;Receipt Printing&gt;Create Printer.
+1. admin.cloudwaitress.jpのCloudWaitressアカウントにログインし、「設定」&gt;「システム」&gt;「領収書の印刷」&gt;「プリンタの作成」に進みます。.
 
 ![](../.gitbook/assets/1-create-printer.png)
 
-1. Name the printer, ideally use the same name as the settings in PushPrinter to avoid confusion. We also recommend turning on 'Auto Print Orders' and 'Auto Print Bookings'.
+2.混乱を避けるために、理想的にはPushPrinterの設定と同じ名前を使用してください。また、「自動印刷注文」と「自動印刷予約」をオンにすることをお勧めします。
 
 ![](../.gitbook/assets/untitled%20%282%29.png)
 
-1. Now select 'Printer Settings' and make sure that;
-2. 'Printing Method' - is set to ESCPOS
-3. 'ESCPOS Printing Type' - is set to 'ESCPOS Image'.
+1. 今すぐ「プリンタの設定」を選択し、確認してください。 印刷方法」 - ESCPOSに設定されています。 ESCPOS 印刷タイプ」が「ESCPOS 画像」に設定されています。
 
 {% hint style="warning" %}
-**NOTE** - In the case that your printer doesn't support image printer \(not printing correctly or printing very slowly\) Please change this to 'ESCPOS Text Only'.
+注意 - お使いのプリンタがイメージプリンタに対応していない場合（正しく印刷されない、または印刷が非常に遅い）、これを「ESCPOSテキストのみ」に変更してください。
 {% endhint %}
 
 ![](../.gitbook/assets/untitled-1%20%282%29.png)
 
-1. Scroll to the bottom on the screen and press the 'Save' button.
-2. Then highlight the API key &gt; right click &gt; copy to clipboard.
+1. 画面の一番下までスクロールして「保存」ボタンを押します。 
+2. そして、APIキーをハイライト表示＞右クリック＞クリップボードにコピーします。
 
 ![](../.gitbook/assets/untitled-2%20%283%29.png)
 
-1. Paste the API key into the relevant API field in PushPrinter.
+1. APIキーをPushPrinterの該当するAPIフィールドに貼り付けます。
 

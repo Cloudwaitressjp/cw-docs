@@ -1,59 +1,51 @@
 ---
-description: >-
-  Learn how to accept online payments using your own PayPal account with our
-  simple setup process
+description: 簡単な設定方法で、ご自身のPayPalアカウントを使用してオンラインでの支払いを受け付ける方法をご紹介します。
 ---
 
-# Setup PayPal Payments
+# PayPalでのお支払いを設定する
 
-PayPal is one of the most widely used online payment methods. CloudWaitress makes use of PayPal's REST express checkout payment integration. This allows us to process payments on your behalf with the funds going straight to your account. Please be aware that PayPal is only available in certain countries and currencies. You can see them [here](https://developer.paypal.com/docs/integration/direct/rest-api-payment-country-currency-support/).
+PayPalは最も広く利用されているオンライン決済方法の一つです。CloudWaitressでは、PayPalのRESTエクスプレスチェックアウト決済機能を利用しています。これにより、お客様に代わってお支払いを処理し、お客様の口座に直接送金することができます。PayPalは一部の国と通貨でしかご利用いただけませんのでご注意ください。[こちら](www.paypal.jp)で見ることができます
 
 {% hint style="danger" %}
-We highly recommend using Stripe instead of PayPal for online payments. PayPal occasionally has various service issues in our experience. See how Stripe payments guide instead below.
+オンラインでの支払いにはPayPalの代わりにStripeを使用することを強くお勧めします。PayPalは時折、私たちの経験上、様々なサービスの問題を抱えています。以下では、代わりにどのようにStripeの支払いガイドを参照してください。
 {% endhint %}
 
 {% page-ref page="setup-stripe-payments.md" %}
 
-## How PayPal Payments Work
+PayPalでの支払いの仕組み
 
-Once PayPal is enabled, the option will be available to customers during the checkout phase of their order. Upon selection, they can either log in to their PayPal account, create an account or use their credit card and check out as a guest in order to complete payment.
+PayPalを有効にすると、注文のチェックアウト時にオプションが利用できるようになります。選択すると、PayPalアカウントにログインしてアカウントを作成するか、クレジットカードを使用して支払いを完了するためにゲストとしてチェックアウトすることができます。
 
-## Requirements
+必要条件
 
-In order to use PayPal with CloudWaitress, you will need a **fully valid business account**. If you already have a PayPal business account, you can skip this step.
+ICloudWaitressでPayPalを使用するには、完全に有効なビジネスアカウントが必要です。すでにPayPalのビジネスアカウントをお持ちの場合は、このステップをスキップすることができます。
 
-If you do not already have one, sign up at [https://www.paypal.com/webapps/mpp/account-selection](https://www.paypal.com/webapps/mpp/account-selection). You can also upgrade your personal account to a business one from within your account settings.
+まだお持ちでない場合は、[https://www.paypal.com/webapps/mpp/account-selection](https://www.paypal.com/webapps/mpp/account-selection) でサインアップしてください。また、アカウント設定から個人アカウントをビジネスアカウントにアップグレードすることもできます。
 
-## Connecting Your PayPal Account
+PayPalアカウントの接続
 
-### Create a REST API Application
+REST APIアプリケーションの作成
 
-1. Visit [https://developer.paypal.com/developer/applications/](https://developer.paypal.com/developer/applications/)
-2. Log into your PayPal account using the login in button
-3. Once logged in, scroll down until you see the title "REST API apps"
-4. Press the "Create App" button
-5. Enter your business name for the app name, ignore the sandbox developer account field
-6. Press the "Create App" button to complete this step
+1. [https://developer.paypal.com/developer/applications/](https://developer.paypal.com/developer/applications/) をご覧ください。 ログインボタンを使用してPayPalアカウントにログインします。 ログインしたら、"REST APIのアプリ "というタイトルが表示されるまで下にスクロールします。 アプリ作成」ボタンを押す アプリ名にビジネス名を入力し、サンドボックスの開発者アカウントフィールドを無視します。 アプリを作成」ボタンを押して、このステップを完了します。
 
 ![PayPal REST apps](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_141scma.png)
 
-### Copy Live Application Credentials
+ライブ申請資格情報のコピー
 
-1. After creating your application, you will be on the page where you can copy your credentials
-2. Change from the "Sandbox" to "Live" view using the buttons on the top right
-3. Scroll down and press "Show" below the "Secret".
-4. You will now be able to see your "Client ID" and "Secret" keys
-5. In another window, go to your restaurant dashboard and to "Settings &gt; Payments &gt; PayPal"
-6. Enable PayPal payments and paste in your "Client ID" and "Secret" key from the PayPal dashboard
-7. Choose your payment currency and save the form
+1. アプリケーションを作成した後、認証情報をコピーするページに移動します。
+2.  右上のボタンを使用して、「サンドボックス」から「ライブ」ビューに変更します。
+3.  下にスクロールして「シークレット」の下にある「表示」を押します。
+4.  これで「クライアントID」と「シークレット」のキーが表示されます。
+5.  別のウィンドウで、あなたのレストランのダッシュボードに移動し、"設定&gt;支払い&gt;PayPal "へ PayPalでの支払いを有効にし、
+6. PayPalのダッシュボードから「クライアントID」と「シークレット」キーを貼り付けます。 お支払い通貨を選択し、フォームを保存します。
 
 ![PayPal application credentials](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1g9uc8i.png)
 
-## PayPal's Fees
+ペイパルの手数料
 
-Please be aware that using PayPal, like other online credit card processors, you will be charged a fee on every transaction. This has to be managed by yourself through your own PayPal account as we are not responsible for this. You can use the PayPal website to see the fees for your respective country and currency.
+PayPalを使用して、他のオンラインクレジットカード処理業者と同様に、すべてのトランザクションに手数料が課金されることに注意してください。これは、私たちはこれについて責任を負いませんので、これはあなた自身のPayPalアカウントを介して自分で管理する必要があります。お客様は、PayPalのウェブサイトを使用して、それぞれの国と通貨の手数料を確認することができます。
 
-## Refunds
+払い戻し
 
-Currently, refunds must be manually processed from within your PayPal account.
+現在のところ、返金はPayPalアカウント内から手動で処理する必要があります。
 

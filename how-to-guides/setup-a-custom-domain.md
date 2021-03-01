@@ -1,39 +1,32 @@
 ---
-description: >-
-  Learn how to connect your own custom domain name to your online store for
-  better branding and SEO
+description: より良いブランディングとSEOのために、独自のカスタムドメイン名をオンラインストアに接続する方法を学びます。
 ---
 
-# Setup A Custom Domain
+# カスタムドメインの設定
 
-## Setup Process
+セットアッププロセス
 
-1. In the restaurant dashboard, see "Settings &gt; Website &gt; Domains &gt; Custom Domain"
-2. Enter your domain name and press save
-3. Go to your domain management panel where you registered your domain
-4. Access your DNS records and add the DNS records listed below
-5. After adding the DNS records, wait 10 minutes for it to take effect
-6. Then press the "Generate SSL Certificate" button under your custom domain settings. 
+1. レストランのダッシュボードで、「設定 &gt; ウェブサイト &gt; ドメイン &gt; カスタムドメイン」を参照してください。 ドメイン名を入力して保存を押す ドメインを登録したドメイン管理パネルに移動します。 DNSレコードにアクセスして、以下のリストにあるDNSレコードを追加します。 DNSレコードを追加した後、それが有効になるまで10分待ちます。 その後、カスタムドメイン設定の下にある「SSL証明書の生成」ボタンを押します。
 
-If your DNS settings have taken effect, it will indicate the SSL certificate has generated successfully. Once generated, your site will be accessible on your custom domain name. If you are unable to generate the certificate, allow more time for your DNS settings to take effect.
+DNS設定が有効になっていれば、SSL証明書が正常に生成されたことを示します。生成されると、あなたのサイトはカスタムドメイン名でアクセスできるようになります。証明書を生成できない場合は、DNS設定が有効になるまでもう少し時間をおいてください。
 
-## DNS Record To Add
+追加するDNSレコード
 
-| Record Type | Host | Value |
+| レコードタイプ | ホスト | 値 |
 | :--- | :--- | :--- |
-| A Record | www / order / anything | 35.238.2 .132 |
+| レコード | ｗｗｗｗｗ / オーダー / なんでもあり | 35.238.2 .132 |
 
 {% hint style="info" %}
-The host value is the subdomain of your domain that your customer will need to visit to access the site. If the host value is "order" and your domain is "business.com", then your store URL will be "order.business.com"
+ホスト値は、お客様がサイトにアクセスするために訪問する必要があるドメインのサブドメインです。ホスト値が "order "で、ドメインが "business.com "の場合、ストアURLは "order.business.com "になります。
 {% endhint %}
 
 {% hint style="warning" %}
-**If you use "www" for your host value, then please add the following record as well**
+ ****ホスト値に "www "を使用している場合は、以下のレコードを追加してください。
 {% endhint %}
 
 | Record Type | Host | Value |
 | :--- | :--- | :--- |
-| A Record | @ / blank | 35.238.2 .132 |
+| レコード | @ / 空白 | 35.238.2 .132 |
 
-Setting this will ensure if someone types in your root domain, i.e. example.com, they will be redirected to www.example.com
+これを設定すると、ルートドメイン、つまり example.com と入力した人が www.example.com にリダイレクトされるようになります。
 

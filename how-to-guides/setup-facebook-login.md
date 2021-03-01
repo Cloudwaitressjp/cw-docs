@@ -1,54 +1,50 @@
 ---
-description: >-
-  Learn how to setup the Facebook login system for customers to easily create
-  accounts using Facebook
+description: Facebookを使って簡単にアカウントを作成するための顧客向けFacebookログインシステムの設定方法を学ぶ
 ---
 
-# Setup Facebook Login
+# Facebookログインの設定
 
-Visit [https://developers.facebook.com/](https://developers.facebook.com/) and login to your Facebook account
-
-On the top right corner, select "My Apps" and press "Add New App"
+[https://developers.facebook.com/](https://developers.facebook.com/) にアクセスし、Facebookアカウントにログインしてください。 右上の「マイアプリ」を選択し、「新規アプリの追加」を押します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_aqheot.png)
 
-Fill out the form and create the app
+フォームに必要事項を記入してアプリを作成
 
-On the app dashboard the left menu, select "Settings &gt; Basic". Enter your website domain into the "App Domains" field
+ アプリダッシュボードの左メニューで「設定＞基本」を選択します。App Domains」の欄にWebサイトのドメインを入力します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_iokp6p.png)
 
-Scroll down and press the "Add Platform" button and select "Website
+下にスクロールして「プラットフォームの追加」ボタンを押し、「ウェブサイト」を選択します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_5fdlaq.png)
 
-Enter your ordering site URL into the "Site URL" box and then press "Save Changes" on the bottom right.
+サイトURL」欄にご注文サイトのURLを入力し、右下の「変更を保存」を押してください。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_pa5uog.png)
 
-On the left navigation menu, press "Products" and press the "Set Up" button for Facebook Login.
+左側のナビゲーションメニューで「商品」を押し、Facebookログインの「設定」ボタンを押します。
 
-On the next screen, select "Web", you should see your "Site URL" already filled out, press "Save"
+次の画面では、"Web "を選択し、あなたの "サイトURL "がすでに記入されているのが表示されるはずです。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_gdcuti.png)
 
-On the left menu, under "Products &gt; Facebook Login", select "Settings"
+左メニューの「製品 &gt; Facebookログイン」で「設定」を選択します。
 
-Enable "Embedded Browser OAuth Login"
+埋め込み型ブラウザOAuthログイン」を有効にする
 
-Enter your store domain into the "Valid OAuth Redirect URIs" field and press "Save Changes"
+Valid OAuth Redirect URIs "フィールドにストアドメインを入力し、"Save Changes "を押します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_hbyf21.png)
 
-Finally, copy your Facebook App ID as shown on the top of the app dashboard
+最後に、アプリダッシュボードの上部に表示されているように、FacebookのアプリIDをコピーします。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_yxw5jy.png)
 
-With the App ID copied, visit your restaurant dashboard and to "Settings &gt; System &gt; Customer Accounts &gt; Facebook". Paste your App ID and press save
+アプリIDをコピーした状態で、レストランのダッシュボードにアクセスし、"設定" &gt; "システム" &gt; "顧客アカウント" &gt; "Facebook "を選択します。アプリIDを貼り付けて、保存ボタンを押してください。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_u1lgnf.png)
 
-Visit your online store and confirm that the Facebook login option is available under the "Login / Signup" popup
+オンラインストアにアクセスし、「ログイン/サインアップ」ポップアップの下にFacebookのログインオプションが利用可能であることを確認します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1c1swn7.png)
 

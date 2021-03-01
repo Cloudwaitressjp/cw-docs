@@ -1,19 +1,12 @@
 ---
-description: >-
-  With our native mobile app solution, we are able to package your online store
-  into your own custom branded mobile application.
+description: 当社のネイティブモバイルアプリソリューションでは、お客様のオンラインストアをお客様独自のカスタムブランドのモバイルアプリにパッケージ化することができます。
 ---
 
-# Setup an iOS & Android App
+# iOS＆Androidアプリの設定
 
-## Custom App Setup Process
+カスタムアプリの設定プロセス
 
-1. Contact us using our live-chat to let us know that you would like us to start the process
-2. We send you further instructions and request some digital graphics
-3. We will create and send you pictures of your app icon and splash screen for you to approve
-4. Finally, we publish the apps to your Apple and Android store accounts
+1. ライブチャットを利用して、プロセスを開始したい旨をお知らせください。 私達はあなたにさらに指示を送り、いくつかのデジタル・グラフィックスを要求します アプリのアイコンとスプラッシュ画面の写真を作成してお送りします。 最後に、AppleとAndroidストアのアカウントにアプリを公開します。This application is compatible with Android and iOS platforms.
 
-{% hint style="info" %}
-This application is compatible with Android and iOS platforms.
-{% endhint %}
+
 

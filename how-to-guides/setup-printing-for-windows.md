@@ -1,16 +1,10 @@
 ---
-description: >-
-  Learn how to setup and configure order printing for Windows devices with our
-  printing software
+description: 印刷ソフトウェアを使用して、Windowsデバイスへの注文印刷を設定・設定する方法をご紹介します。
 ---
 
-# Setup Printing For Windows
+# Windows用のセットアップ印刷
 
-Our system allows you to manually and automatically print out new orders. This guide will show you how to set order printing and troubleshoot issues.
-
-\|\| We are happy to remotely set up your printer for you. We know this is a step that can trip up many people due to every printer being a bit different. Please get in touch with us if you need assistance
-
-For step by step instructions by printing method. Please use the following instructions. It is worth noting that for most situations, we recommend using the Windows Shared Printing method;
+当社のシステムでは、新規注文を手動および自動で印刷することができます。このガイドでは、注文印刷の設定方法と問題のトラブルシューティングをご紹介します。 \|\| プリンタの設定を遠隔操作で行うことができます。このステップは、プリンターの違いにより、多くの方にご迷惑をおかけする可能性があることを知っています。ご不明な点がございましたら、お気軽にお問い合わせください。 印刷方法によるステップバイステップの説明は 以下の手順をご利用ください。ほとんどの状況では、Windows共有印刷方式を使用することをお勧めします。
 
 {% page-ref page="printing-api-key.md" %}
 

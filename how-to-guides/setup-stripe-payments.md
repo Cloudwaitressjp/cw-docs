@@ -1,54 +1,46 @@
 ---
-description: >-
-  Learn how to setup Stripe, our recommend online payments provider due to their
-  streamlined setup and user experience
+description: 効率的なセットアップとユーザーエクスペリエンスでお勧めのオンライン決済プロバイダー、Stripeのセットアップ方法をご紹介します。
 ---
 
-# Setup Stripe Payments
+# ストライプ決済の設定
 
-You can accept credit cards online using [Stripe](https://stripe.com/). It is currently supported in numerous countries with a variety of currencies. If Stripe is not supported in your country you can apply to try Stripe Atlas. Below is our simple guide on setting up Stripe and managing your account.
+[Stripe](www.stripe.com)を利用してオンラインでクレジットカードを利用することができます。現在、多くの国で様々な通貨に対応しています。もしあなたの国でStripeがサポートされていない場合は、Stripe Atlasをお試しください。以下はStripeのセットアップとアカウント管理についての簡単なガイドです。
 
-## How Stripe Payments Work
+Stripeペイメントの仕組み
 
-When Stripe is enabled, customers can choose from the online payment option when checking out. If a customer selects "Credit Card", the credit card field will drop-down below.
+Stripeを有効にすると、顧客はチェックアウト時にオンライン決済の選択肢から選択できるようになります。顧客が「クレジットカード」を選択した場合、クレジットカードのフィールドは以下のようにドロップダウンします。
 
 ![Stripe payment example](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_16wk7ks.png)
 
-## Connecting Your Stripe Account
+Stripeアカウントを接続する
 
-1. Create an account on the Stripe website if you do not already have one
-2. Ensure you are viewing your live account and not your test account 
-3. Login to your account dashboard. On the left navigation, go to "Developers &gt; API Keys"
-4. Next, open up your restaurant dashboard and navigate to "Settings &gt; Payments &gt; Stripe"
-5. Enable Stripe payments using the "Enable" switch
-6. Copy the "Publishable Key" and "Secret Key" from the Stripe dashboard into the restaurant dashboard
-7. Set your payment currency in the restaurant dashboard and save the settings
+1. まだアカウントをお持ちでない場合は、Stripeウェブサイトにアカウントを作成してください。 テストアカウントではなく、ライブアカウントを表示していることを確認してください。 アカウントダッシュボードにログインします。左側のナビゲーションで、「Developers &gt; API Keys」に移動します。 次に、あなたのレストランのダッシュボードを開き、 "設定 &gt; 支払い &gt; ストライプ "に移動します。 Enable」スイッチを使ってStripe決済を有効にする Stripeのダッシュボードから「発行可能な鍵」と「秘密の鍵」をレストランのダッシュボードにコピーします。 レストランのダッシュボードで支払い通貨を設定し、設定を保存します。
 
 ![Stripe API keys](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_4cpfy8.png)
 
-## Testing Payments
+ペイメントのテスト
 
-If you would like to do a test payment, copy your test API keys from Stripe. You can do this by toggling the "Viewing test data" switch.
+テスト決済をしたい場合は、Stripeからテスト用のAPIキーをコピーします。これは、「テストデータを見る」スイッチを切り替えることで行うことができます。
 
 ![Stripe test data](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1bjx53a.png)
 
-Once this is done, you can use the credit card number "4242 4242 4242 4242" with any valid expiry, CVC and zip code. This card will allow you to make a dummy payment.
+これが完了したら、有効期限、CVC、郵便番号が任意のクレジットカード番号「4242 4242 4242」を使用することができます。このカードでダミーの支払いができるようになります。
 
-## Validating Your Stripe Account
+Stripeアカウントを検証する
 
-To withdraw online payments to your bank, you will need to ensure your Stripe account is fully valid. Pleae, ensure you have completed all their required validations.
+銀行へのオンライン支払いを引き出すには Stripeアカウントが完全に有効であることを確認する必要があります。あなたが必要とされるすべての検証を完了していることを確認してください。
 
 ## Stripe Fee's
 
-We are not responsible for your Stripe account management or fees. Your Stripe account is simply linked to your CloudWaitress account to process charges on your behalf with the money going straight to your account.
+私たちはあなたのStripeアカウントの管理や手数料については責任を負いません。あなたのStripeアカウントはCloudWaitressのアカウントにリンクされているだけで、あなたに代わってチャージを処理し、そのお金はあなたのアカウントに直接送られます。
 
-As such it is important you are aware of Stripe's payment processing fees. You can read more here [https://stripe.com/pricing](https://stripe.com/pricing). Please also take the time to read their FAQ and support to clear up any issues you may have.
+そのため、Stripeの支払い処理手数料を知っておくことが重要です。詳しくはこちら [https://stripe.com/pricing](https://stripe.com/pricing) をご覧ください。また、あなたが抱えているかもしれない問題を解決するために、彼らのFAQとサポートを読む時間を取ってください。
 
-## Stripe Currency Conversions
+ストライプの通貨変換
 
-Stripe enables you to accept different currencies online depending on the country you are in. If your Stripe currency is different from your store currency, we will convert the order amount to your Stripe default currency using real-time exchange rates for payment to be made.
+Stripeでは、お客様がお住まいの国によって異なる通貨をオンラインでご利用いただけます。Stripeの通貨が店舗の通貨と異なる場合は、リアルタイムの為替レートを使用して注文金額をStripeのデフォルト通貨に変換して支払いを行います。
 
-## Issuing Refunds
+払い戻しの発行
 
-Stripe refunds can be processed from your order management dashboard or the Stripe dashboard. In the order management dashboard, the refund payment option is available in the order details popup. Simply press the action select bar and choose "Refund Stripe Payment".
+Stripeの返金は、注文管理ダッシュボードまたはStripeダッシュボードから処理することができます。注文管理ダッシュボードでは、注文の詳細ポップアップで返金支払いオプションを利用できます。アクションセレクトバーを押して「Stripe Paymentの返金」を選択するだけです。
 

@@ -1,38 +1,32 @@
 ---
-description: >-
-  Enabling Facebook ordering will allow your customers to order from your
-  Facebook page.
+description: Facebookでの注文を有効にすることで、あなたの顧客があなたのFacebookページから注文できるようになります。
 ---
 
-# Setup Facebook Ordering
+# Facebook注文の設定
 
 {% hint style="danger" %}
-As much as this feature sounds great, it's honestly not very pleasant for people to order through Facebook. These tabs are also only available in desktop versions of Facebook further limiting them. That means it won't work on for users on their mobile phones. Facebook also regularly makes changes and sometimes things break unexpectedly. As such, overall we recommend against using this feature. Simply sending people to your ordering domain is a far more reliable option.
+この機能は素晴らしいと思うと同時に、Facebookを通じて注文する人にとっては正直あまり快適ではありません。また、これらのタブは、Facebookのデスクトップ版でしか利用できないため、さらに制限されています。つまり、携帯電話のユーザーには使えないということです。Facebookはまた、定期的に変更を行い、時には物事が予期せず壊れることがあります。このように、全体的にはこの機能の使用をお勧めしません。単にあなたの注文ドメインに人々を送るだけの方がはるかに信頼性の高いオプションです。
 {% endhint %}
 
-Visit [https://developers.facebook.com](https://developers.facebook.com). If you are not already signed into Facebook, you can sign in with your regular Facebook account.
+[https://developers.facebook.com](https://developers.facebook.com) をご覧ください。まだFacebookにサインインしていない場合は、通常のFacebookアカウントでサインインすることができます。
 
-Once done, select the "My Apps" button on the top right and select "create new app".
+完了したら、右上の「マイアプリ」ボタンを選択し、「新規アプリの作成」を選択します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_f92n5y.png)
 
-Enter your business name for your app name along with your email address and press create
+アプリ名のビジネス名をメールアドレスと一緒に入力し、createを押します。
 
-After creating the app, you will be taken to the app dashboard. On the left menu, go to "Settings &gt; Basic"
+アプリを作成すると、アプリのダッシュボードに移動します。左メニューの "設定 &gt; 基本 "を選択します。
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_wtsxiz.png)
 
-Choose "Page Tab". You will now need to fill in your store URL under "Secure Page Tab URL" and what you want to call your page tab under "Page Tab Name". Your store URL can either be your CloudWaitress subdomain such as "[https://yourdomain.cloudwaitress.com](https://yourdomain.cloudwaitress.com)" or your custom domain name if setup
+ページタブ」を選択します。ここで、「セキュアなページタブURL」の下にストアURLを入力し、「ページタブ名」の下にページタブと呼びたいものを入力する必要があります。ストアURLは「[https://yourdomain.cloudwaitress.com」のようなCloudWaitressのサブドメインか、設定されている場合はカスタムドメイン名にすることができます。](https://yourdomain.cloudwaitress.com」のようなCloudWaitressのサブドメインか、設定されている場合はカスタムドメイン名にすることができます。)
 
 ![](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_cb565a.png)
 
-To add the page tab to your Facebook page, you will need your Facebook App ID which you will see highlighted in orange in the previous photo at the top of the page
-
-Next, you need to visit the following URL into your browser making sure to replace with your Facebook app ID and with the store URL that you entered previously
+あなたのFacebookページにページタブを追加するには、ページの上部にある前の写真でオレンジ色にハイライト表示されているFacebookアプリIDが必要です。 次に、次のURLにアクセスする必要がありますあなたのFacebookアプリのIDと以前に入力したストアのURLに置き換えることを確認して、ブラウザに
 
 [https://www.facebook.com/dialog/pagetab?app\_id=&redirect\_uri=](https://www.facebook.com/dialog/pagetab?app_id={{YOUR_APP_ID}}&redirect_uri={{YOUR_STORE_URL}})
 
-If done correctly, you will see a page on Facebook saying "Add Page Tab" and you will be able to select one of your Facebook pages
-
-If done correctly, you will see a page on Facebook saying "Add Page Tab" and you will be able to select one of your Facebook pages
+正しく行うと、Facebook上に「ページタブを追加」と書かれたページが表示され、Facebookページの中から1つを選択することができるようになります。 正しく行うと、Facebook上に「ページタブを追加」と書かれたページが表示され、Facebookページの中から1つを選択することができるようになります。
 

@@ -1,8 +1,10 @@
 ---
-description: >-
-  Learn how to set up specific features relating to the system such as online
-  payments, customer accounts, order printing and more.
+description: オンライン決済、顧客アカウント、注文印刷など、システムに関連する具体的な機能を設定する方法を学びます。
 ---
 
-# How To Guides
+# ハウツーガイド
+
+## 
+
+
 

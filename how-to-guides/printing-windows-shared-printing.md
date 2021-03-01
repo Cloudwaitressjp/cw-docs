@@ -1,58 +1,62 @@
 ---
-description: how to guide to connect a USB printer
+description: USBプリンタの接続方法
 ---
 
-# Printing - Windows Shared Printing
+# 印刷 - Windows 共有印刷
 
-## 1. Please go to Windows control Panel
+## 
+
+1. Windowsのコントロールパネルに移動してください。
 
 ![](../.gitbook/assets/untitled%20%283%29.png)
 
-## 2. Open 'Devices and Printers'
+## 2. デバイスとプリンター」を開く
 
 ![](../.gitbook/assets/untitled-1%20%283%29.png)
 
-## 3. Right click and select 'Printer Properties'
+## 3. 右クリックして「プリンタのプロパティ」を選択します。
 
 ![](../.gitbook/assets/untitled-2.png)
 
-## 4. If your printer is not showing use these instructions to set it up. [Printer Set up](https://www.notion.so/cloudwaitresswiki/Printing-Add-a-printer-18689e4654fe4978b20aeb82b581d81e).
+## 4. プリンタが表示されない場合は、以下の手順で設定してください。[プリンタの設定](https://www.notion.so/18689e4654fe4978b20aeb82b581d81e)
 
-## 5. To test that the printer is working, please press Print Test Page
+## 5. プリンタが動作していることをテストするには、テストページの印刷を押してください。
 
 ![](../.gitbook/assets/untitled-3%20%283%29.png)
 
-## 5. If the test page does not print. Then please connect and install the printer correctly. Please see : [Printer Set up](https://www.notion.so/cloudwaitresswiki/Printing-Add-a-printer-18689e4654fe4978b20aeb82b581d81e).
+## 5. テストページが印刷されない場合 プリンタを正しく接続・設置してください。を参照してください。[プリンタの設定](https://www.notion.so/18689e4654fe4978b20aeb82b581d81e)
 
-## 6. If the test page does print, please share the printer with the following settings;
+
+
+6.テストページが印刷される場合は、以下の設定でプリンターを共有してください。
 
 ![](../.gitbook/assets/untitled-4%20%281%29.png)
 
-## 7. Click apply
+## 7. 適用をクリックしてください。
 
-## 8. Open the [PushPrinter](https://pushprinter.com/#windows) application. Please check that the settings display as follows;
+## 8. PushPrinterアプリケーションを開きます。以下のように設定が表示されていることを確認してください。
 
 ![](../.gitbook/assets/untitled-5.png)
 
-## 7. Now either 'Create Printer' or 'edit' your existing printer:
+## 9.今すぐ「プリンタを作成」するか、既存のプリンタを「編集」します。
 
 ![](../.gitbook/assets/untitled-6%20%284%29.png)
 
-## 8. Add settings including: API key from the printer just created, ensure printer type is Windows Shared Printer \(ESCPOS\). Windows shared printer name must match the shared printer name that was added before.
+## 10. などの設定を追加します。作成したばかりのプリンタの API キー、プリンタの種類が Windows 共有プリンタ \(ESCPOS\) であることを確認します。Windows共有プリンタ名は、前に追加した共有プリンタ名と一致している必要があります。
 
 ![](../.gitbook/assets/untitled-7%20%281%29.png)
 
-**NOTE:**
+注: 
 
-**Printer name** - This is the name that the printer will show inside of CloudWaitress.
+プリンタ名 - プリンタ名は、CloudWaitress内で表示される名前です。 プリンタ名 - CloudWaitress内でプリンタが表示する名前です。
 
-**API Key** - This needs to be copied from the printer settings inside of CloudWaitress.
+ API Key - CloudWaitress内のプリンタ設定からコピーする必要があります。
 
-**Number of copies** - This will determine how many copies of the are printed.
+ コピー数 - これは、印刷されるコピー数を決定します。 
 
-**Printing type** - This needs to be set to Windows Shared Printer \(ESCPOS\) for this to work.
+印刷タイプ - これを機能させるには、Windows共有プリンタ（ESCPOS）に設定する必要があります。
 
-**Windows Share Printer Name** - This must match EXACTLY the shared printer name that was added before. You should avoid spaces and special characters.
+ Windows 共有プリンタ名 - これは、以前に追加された共有プリンタ名と完全に一致している必要があります。スペースや特殊文字は避ける必要があります。
 
-## 8. Then press 'Send Test Print' and then press 'Create Printer'.
+## 11. 次に「Send Test Print」を押し、「Create Printer」を押します。
 
