@@ -1,110 +1,108 @@
 ---
-description: 印刷ソフトウェアを使用して、Windowsデバイスへの注文印刷を設定・設定する方法をご紹介します。
+description: Windowsデバイスでの印刷機能の設定する方法について
 ---
 
-# Windows用のセットアップ印刷
+# 印刷設定 - Windows用の設定
 
-当社のシステムでは、新規注文を手動および自動で印刷することができます。このガイドでは、注文印刷の設定方法と問題のトラブルシューティングをご紹介します。 \|\| プリンタの設定を遠隔操作で行うことができます。このステップは、プリンターの違いにより、多くの方にご迷惑をおかけする可能性があることを知っています。ご不明な点がございましたら、お気軽にお問い合わせください。 印刷方法によるステップバイステップの説明は 以下の手順をご利用ください。ほとんどの状況では、Windows共有印刷方式を使用することをお勧めします。
+当社のシステムでは、新規注文を手動および自動で印刷できます。このガイドでは、注文印刷を設定し、問題を解決する方法を説明します。
 
-{% page-ref page="printing-api-key.md" %}
+**要件**
 
-{% page-ref page="printing-windows-shared-printing.md" %}
+* Windows 7/8/1032ビットまたは64ビット
+* ドライバがインストールされたWindows互換プリンタ
+* ダウンロードできるPushPrinterの最新版[こちら](https://www.pushprinter.com/)
 
-{% page-ref page="printing-windows-network-printing.md" %}
+セットアッププロセス
 
-## Requirements
+**プリンタドライーがインストールされ、機能していることを確認します**
 
-* Windows 7 / 8 / 10 either 32-bit or 64-bit
-* A Windows-compatible printer with the drivers installed
-* Latest version of PushPrinter that can be downloaded [here](https://www.pushprinter.com)
+1. ドライバが正常にインストールされると、プリンタはPCの\[コントロールパネル\]&gt; \[ハードウェアとサウンド\]&gt; \[デバイスとプリンタ\]の下に表示されます。
+2. プリンタを右クリックして、\[プロパティ\]を選択します
+3. 左下の「テストページの印刷」を押します。 
+4. テストページが正常に印刷されたことを確認します 
 
-## Setup Process
+これが成功すると、プリンタは正常に動作します。プリンターが見つからない、または機能しない場合は、ドライバーを再インストールしてください。
 
-### Verify Printer Drivers Are Installed & Working
+**利用可能な用紙サイズに注意してください**
 
-1. If your drivers are successfully installed, your printer will be shown on your PC under "Control Panel &gt; Hardware and Sound &gt; Devices and Printers"
-2. Right-click your printer and select "Properties"
-3. On the bottom left, press "Print Test Page". 
-4. Verify that the test page successfully printed
+この手順は、プリンター毎に異なります。一部のプリンターには、使用可能な用紙サイズを表示できる独自の設定ツールが用意されています。
 
-If this is successful, your printer will work fine. If you cannot find your printer or it doesn't work, reinstall the driver again.
+デフォルトでは、前の手順で説明したように、この情報はプリンタの\[プロパティ\]ダイアログに表示される場合があります。これは、プリンターのプロパティの\[デバイス設定\]タブにある場合があります。
 
-### Take Note Of The Paper Sizes Available
+また、プリンターのプロパティの下部にある\[設定\]を選択してから、下部にある\[詳細\]を再度選択することもできます。
 
-This step is slightly different for all printers. Some printers provide their own configuration tool where you can view the paper sizes available.
+これがどのように見えるかを確認するには、下の画像を参照してください。  
 
-By default, you might find this information under your printer "Properties" dialogue as described in the previous step. Sometimes this is found under the "Device Settings" tab in your printer properties.
-
-Other times you may select "Preferences" at the bottom of the printer properties popup and then select "Advanced" at the bottom again
-
-Refer to the image below to see what this may look like.
 
 ![Printer paper size settings](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_1vcnqy8.png)
 
-Take note of the paper sizes available as you will likely need to try a few to get it working flawlessly
+問題なく動作させるには、いくつか試してみる必要がある可能性があるため、使用可能な用紙サイズに注意してください。
 
-### Create A Printer Configuration
+**プリンターの作成方法**
 
-1. Visit your restaurant dashboard and navigate to "Settings &gt; Receipt Printing"
-2. Press the "New Printer" button and fill out any options needed
-3. On the "Paper Settings" tab, set your paper width and paper height according to the largest available paper size available for your printer as noted in the previous step. Going off the image above, we would enter a width of "72" and a height of "210"
-4. We highly recommend starting with a font size of "18" and a paper margin of "0"
-5. Create the print configuration. After creating it, you will get a unique API key to connect to it. Keep this screen open as you will need to copy your API key soon
+1. レストランの管理画面にアクセスし、\[設定\]&gt; \[領収書の印刷\]に移動します
+2. 「新しいプリンタ」ボタンを押して、必要なオプションを入力します
+3. \[用紙設定\]タブで、前の手順で説明したように、プリンタで使用可能な最大の用紙サイズに従って、用紙の幅と高さを設定します。上の画像から、幅「72」、高さ「210」を入力します。
+4. フォントサイズを「18」、用紙の余白を「0」から始めることをお勧めします。
+5. 印刷構成を作成します。作成後、接続するための一意のAPIキーを取得します。APIキーをすぐにコピーする必要があるため、この画面を開いたままにします 
 
 ![Printer API key](https://storage.crisp.chat/users/helpdesk/website/e903fdb8557a9800/image_bnxer6.png)
 
-\|\| The paper sizes entered in your printer configuration must match your Windows paper size settings as set in the printer driver options. If the printout is incorrect or skewed, you will need to test out the other sizes from largest to smallest. When changing the sizes in the printer configuration make sure to change it in the Windows printer driver settings.
+\|\| プリンター設定に入力する用紙サイズは、プリンタードライバーオプションで設定されているWindowsの用紙サイズ設定と一致している必要があります。印刷された用紙の表示が正しくないか歪んでいる場合は、他のサイズを大きいものから小さいものまでテストする必要があります。プリンター設定でサイズを
 
-### Install PushPrinter
+**PushPrinterをインストールします**
 
-1. Download PushPrinter from the following [link](https://www.pushprinter.com)
-2. Run the installer, you will get a warning that the application is unverified, proceed with the installation
-3. After it is installed successfully, PushPrinter will automatically open
+1. PushPrinterをこちらから[ダウンロード](https://pushprinter.com)します。
 
-### Configure PushPrinter
+2. インストーラーを実行すると、アプリケーションが未確認であるという警告が表示されます。インストールを続行してください
 
-1. The first thing you will likely want to do is toggle the "Auto Start" switch so it connects and starts when your PC is started.  Activate this by selecting the "Settings Cog" and ticking the 'Automatically start PushPrinter' button \(image 1.1\).
-2. Press on the "Printer Icon" tab at the top to configure a printing service
-3. Press "Create Printer" button \(image 1.2\).
-4. Copy and paste the API key for the printer you created 2 steps ago
-5. Set the number of copies to print and select your printer
-6. Press the start button and make sure it says connected at the bottom
+3. 正常にインストールされると、PushPrinterが自動的に開きます 
+
+**PushPrinterを設定する**
+
+1. はじめに「自動開始」スイッチを切り替えて、PCの起動時にPushPrinterが接続され起動するようにします。「Settings Cog」を選択し、「PushPrinterを自動的に起動する」ボタンにチェックマークを付けることでこれを有効にします（画像1.1）。
+2. 上部の\[プリンタアイコン\]タブを押して、印刷サービスを設定します
+3. 「プリンタの作成」ボタンを押します（画像1.2）。
+4. 2ステップ前に作成したプリンターのAPIキーをコピーして貼り付けます
+5. 印刷する部数を設定し、プリンタを選択します
+6. スタートボタンを押して、下部に接続済みと表示されていることを確認します
 
 ![Image 1.1 - &apos;Automatically start PushPrinter&apos; button](../.gitbook/assets/pushprinter-settings.png)
 
 ![Image 1.2 - &apos;Create Printer&apos;](../.gitbook/assets/create-printer-pushprinter.png)
 
-### Test Print
+### テストプリント
 
-Visit your orders page. Select an order, under the action select bar, select print. We recommend printing both short and long orders to ensure that there is nothing being cut out vertically. If you have enabled auto-printing for this print configuration, place an order and test out the auto printing
+注文ページにアクセスしてください。注文を選択し、アクション選択バーの下で\[印刷\]を選択します。縦に切り取られていないことを確認するために、短い注文と長い注文の両方を印刷することをお勧めします。この印刷設定で自動印刷を有効にしている場合は、注文して自動印刷をテストしてください。
 
-## Troubleshooting
+**トラブルシューティング**
 
-#### Contact Us
+**お問い合わせ**
 
-We have successfully setup 100's of printers, there is a good chance we can save you lots of headaches so please don't hesitate to contact us.
+数百台のプリンターのセットアップに成功しました。多くの問題を解決することができる可能性が高いので、遠慮なくご連絡ください。
 
-#### Sides being cut-off
+**用紙端の印刷が切れてしまう**
 
-Start by reducing either your margin or paper width values under your printer configuration in your admin dashboard. You will eventually calibrate a suitable width and margin. You can also adjust the font size to something smaller. You can get your correct paper width under your Windows printer settings as seen in the guide above.
+管理画面のプリンタ設定で、余白または用紙幅の値を減らすことから始めます。最終的には、適切な幅とマージンを調整します。フォントサイズをもっと小さいものに調整することもできます。上記のガイドに示されているように、Windowsプリンタ設定で正しい用紙幅を取得できます。
 
-#### The end of the receipt doesn't come out fully
+**領収書の終わりが完全に出てこない**
 
-Under your Windows printer settings. Set your "Feed Line After Printing" option to a high value to allow the printer to feed through a few extra lines.
+Windowsプリンター設定の下。「印刷後のフィードライン」オプションを高い値に設定して、プリンターが数行余分にフィードできるようにします。
 
-#### Invalid API Key
+**無効なAPIキー**
 
-The API key you entered does not below to any of your print configurations. Double check your API key
+入力したAPIキーは、どの印刷構成にも当てはまりません。APIキーを再確認してください
 
-#### Could Not Authenticate
+**認証できませんでした**
 
-Check your internet connection or try again shortly
+インターネット接続を確認するか、しばらくしてからもう一度お試しください
 
-#### Printer not being detected in Windows
+**Windowsでプリンターが検出されない**
 
-You need to find the correct driver for your printer provided its available for Windows. Try googling your printer name followed by the words "windows {insert your windows version} driver"
+Windowsで使用できる場合は、プリンターに適したドライバーを見つける必要があります。プリンタ名に続けて「windows {Windowsバージョンを挿入}ドライバー」という単語をGoogleで検索してみてください
 
-#### Printing not working even though everything is set up correctly
+**すべてが正しく設定されていても印刷が機能しない**
 
-Please ensure that Windows detects your printer. Try restarting your printer or PC. Try printing to your printer from other programs on your PC such as your browser.
+Windowsがプリンターを検出していることを確認してください。プリンタまたはPCを再起動してみてください。ブラウザなど、PC上の他のプログラムからプリンタに印刷してみてください。  
+
 
